@@ -10,7 +10,7 @@ export type Plan = {
   features: string[];
 };
 
-/** One package: Complete access to all SEO tools and Dashboard features for $20 USD */
+/** One package: Complete access to all SEO tools and Dashboard features for $10 USD */
 export const plans: Plan[] = [
   {
     id: "pro",
@@ -18,7 +18,7 @@ export const plans: Plan[] = [
     topic: "SkillStack Pro",
     tagline:
       "All-in-one SEO command center — complete dashboard tools, AI research, and automated tracking.",
-    priceUsd: 20,
+    priceUsd: 10,
     featured: true,
     features: [
       "Keyword research, difficulty & SERP analysis",

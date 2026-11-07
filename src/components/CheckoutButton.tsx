@@ -103,7 +103,7 @@ export default function CheckoutButton({
         ) : (
           <>
             <CreditCard className="h-4 w-4" />
-            <span>{label || `Get ${plan?.name || "Pro"} — $${plan?.priceUsd ?? 20}`}</span>
+            <span>{label || `Get ${plan?.name || "Pro"} — $${plan?.priceUsd ?? 10}`}</span>
           </>
         )}
       </button>

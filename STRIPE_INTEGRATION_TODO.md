@@ -41,7 +41,7 @@ You do **not** need the Studio sample `checkout.html` / `success.html` — Skill
 ### 1. Create the product in Stripe (catalog)
 
 1. Open [Stripe Products](https://dashboard.stripe.com/test/products) (use **Test mode** first).
-2. Create product e.g. **SkillStack Pro Suite** — price **$20 USD**, one-time.
+2. Create product e.g. **SkillStack Pro Suite** — price **$10 USD**, one-time.
 3. Copy the **Price ID** (`price_...`).
 
 ### 2. Env vars — local `.env.local` and Vercel

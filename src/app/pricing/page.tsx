@@ -16,17 +16,17 @@ import {
 export const metadata: Metadata = {
   title: "Pricing | All-in-One SEO Dashboard Suite",
   description:
-    "SkillStack Pro: Complete access to the full SEO dashboard, keyword research, live backlinks tracking, site audits, rank tracking, and AI search tools for $20 USD.",
+    "SkillStack Pro: Complete access to the full SEO dashboard, keyword research, live backlinks tracking, site audits, rank tracking, and AI search tools for $10 USD.",
   alternates: { canonical: absoluteUrl("/pricing") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/pricing"),
     title: "SkillStack Pricing — All-in-One SEO Suite",
     description:
-      "Unlock the entire SkillStack SEO Dashboard, Keyword Research, Backlinks, Rank Tracking & AI tools for $20 USD.",
+      "Unlock the entire SkillStack SEO Dashboard, Keyword Research, Backlinks, Rank Tracking & AI tools for $10 USD.",
   }),
   twitter: pageTwitter({
     title: "SkillStack Pricing — All-in-One SEO Suite",
-    description: "Unlock the entire SkillStack SEO Dashboard, Keyword Research, Backlinks, Rank Tracking & AI tools for $20 USD.",
+    description: "Unlock the entire SkillStack SEO Dashboard, Keyword Research, Backlinks, Rank Tracking & AI tools for $10 USD.",
   }),
 };
 
@@ -41,7 +41,7 @@ export default function PricingPage() {
             path: "/pricing",
             title: "SkillStack Pricing",
             description:
-              "All-in-one SEO dashboard package: keyword research, live backlinks, rank tracking, site audit, and AI search tools for $20 USD.",
+              "All-in-one SEO dashboard package: keyword research, live backlinks, rank tracking, site audit, and AI search tools for $10 USD.",
           }),
           {
             "@context": "https://schema.org",
@@ -70,7 +70,7 @@ export default function PricingPage() {
         lead={
           <>
             Get complete access to all SEO tools, keyword research, live backlinks
-            analysis, site audits, rank tracking, and AI search intelligence for just $20 USD.
+            analysis, site audits, rank tracking, and AI search intelligence for just $10 USD.
             Instant checkout via Stripe (Cards, Apple Pay, Google Pay). Need custom enterprise
             requirements?{" "}
             <Link href="/contact" className="text-accent hover:underline">
