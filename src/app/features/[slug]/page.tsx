@@ -6,7 +6,6 @@ import JsonLd from "@/components/JsonLd";
 import PageCTA from "@/components/PageCTA";
 import PageHero from "@/components/PageHero";
 import PageShell from "@/components/PageShell";
-import { auth } from "@/auth";
 import {
   getFeatureBySlug,
   getFeatureSlugs,
@@ -56,11 +55,6 @@ export default async function FeatureDetailPage({ params }: Props) {
   const { slug } = await params;
   const feature = getFeatureBySlug(slug);
   if (!feature) notFound();
-
-  const session = await auth();
-  const isLoggedIn = Boolean(session?.user);
-  const accountHref = isLoggedIn ? "/dashboard" : "/register";
-  const accountLabel = isLoggedIn ? "Open dashboard" : "Create account";
 
   const path = `/features/${feature.slug}`;
   const related = productFeatures
@@ -113,10 +107,10 @@ export default async function FeatureDetailPage({ params }: Props) {
       >
         <div className="flex flex-wrap gap-3">
           <Link
-            href={feature.dashboardHref}
+            href="/contact"
             className="inline-flex rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-[#010409] hover:bg-accent-deep"
           >
-            Open in dashboard
+            Contact us
           </Link>
           {feature.relatedServiceSlug ? (
             <Link
@@ -177,27 +171,27 @@ export default async function FeatureDetailPage({ params }: Props) {
           <FadeIn delay={0.06}>
             <aside className="border border-line bg-bg-soft p-6 md:p-7">
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-                Product tool
+                Work with us
               </p>
               <h2 className="font-display mt-3 text-xl font-semibold text-snow">
-                {feature.title} in the dashboard
+                {feature.title}
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-ink-muted">
-                This page explains the self-serve tool. Live data and project
-                saves live in your CodeStack dashboard after you sign in.
+                Tell us your niche and goals — CodeStack can deliver this as a
+                service for your business.
               </p>
               <div className="mt-6 flex flex-col gap-3">
                 <Link
-                  href={feature.dashboardHref}
+                  href="/contact"
                   className="inline-flex justify-center rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-[#010409] hover:bg-accent-deep"
                 >
-                  Open {feature.shortTitle}
+                  Contact us
                 </Link>
                 <Link
-                  href={accountHref}
+                  href="/pricing"
                   className="inline-flex justify-center rounded-md border border-line px-5 py-2.5 text-sm font-medium text-snow hover:bg-bg-soft"
                 >
-                  {accountLabel}
+                  See pricing
                 </Link>
               </div>
             </aside>
@@ -205,7 +199,7 @@ export default async function FeatureDetailPage({ params }: Props) {
             {feature.relatedServiceSlug ? (
               <aside className="mt-6 border border-line bg-bg-elevated p-6 md:p-7">
                 <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-                  Or hire us
+                  Related service
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-ink-muted">
                   Prefer CodeStack to do the work and deliver results for you?
@@ -221,7 +215,7 @@ export default async function FeatureDetailPage({ params }: Props) {
 
             <div className="mt-8">
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-                Related tools
+                Related capabilities
               </p>
               <ul className="mt-4 space-y-3">
                 {relatedFallback.map((item) => (
@@ -241,7 +235,7 @@ export default async function FeatureDetailPage({ params }: Props) {
       </div>
 
       <PageCTA
-        primary={{ href: feature.dashboardHref, label: "Open tool" }}
+        primary={{ href: "/contact", label: "Contact us" }}
         secondary={{ href: "/pricing", label: "See pricing" }}
       >
         Ready to use {feature.shortTitle.toLowerCase()} on your projects?

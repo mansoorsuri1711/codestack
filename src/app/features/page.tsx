@@ -5,7 +5,6 @@ import JsonLd from "@/components/JsonLd";
 import PageCTA from "@/components/PageCTA";
 import PageHero from "@/components/PageHero";
 import PageShell from "@/components/PageShell";
-import { auth } from "@/auth";
 import { productFeatures } from "@/lib/features";
 import {
   SITE_URL,
@@ -16,12 +15,12 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Features · CodeStack SEO Dashboard",
+  title: "Features · CodeStack SEO Tools",
   description:
-    "Explore CodeStack SEO tools — keyword research, domain overview, backlinks, organic competitors, content gap, GSC insights, rank tracking, and site audit.",
+    "Explore CodeStack SEO capabilities — keyword research, domain overview, backlinks, organic competitors, content gap, GSC insights, rank tracking, and site audit.",
   keywords: [
     "CodeStack features",
-    "SEO dashboard tools",
+    "SEO tools",
     "keyword research tool",
     "domain overview",
     "backlink checker",
@@ -30,31 +29,25 @@ export const metadata: Metadata = {
   alternates: { canonical: absoluteUrl("/features") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/features"),
-    title: "CodeStack Features — SEO Dashboard Tools",
+    title: "CodeStack Features — SEO Tools",
     description:
-      "Keyword research, domain overview, backlinks, organic search, competitive analysis, and site tools in one dashboard.",
+      "Keyword research, domain overview, backlinks, organic search, competitive analysis, and site tools.",
   }),
   twitter: pageTwitter({
-    title: "CodeStack Features — SEO Dashboard Tools",
+    title: "CodeStack Features — SEO Tools",
     description:
-      "Keyword research, domain overview, backlinks, organic search, competitive analysis, and site tools in one dashboard.",
+      "Keyword research, domain overview, backlinks, organic search, competitive analysis, and site tools.",
   }),
 };
 
-export default async function FeaturesPage() {
-  const session = await auth();
-  const isLoggedIn = Boolean(session?.user);
-  const primaryHref = isLoggedIn ? "/dashboard" : "/register";
-  const primaryLabel = isLoggedIn ? "Open dashboard" : "Start free";
-  const ctaLabel = isLoggedIn ? "Open dashboard" : "Create account";
-
+export default function FeaturesPage() {
   return (
     <PageShell>
       <JsonLd
         data={[
           webPageJsonLd({
             path: "/features",
-            title: "CodeStack Features — SEO Dashboard Tools",
+            title: "CodeStack Features — SEO Tools",
             description:
               "Explore CodeStack SEO tools including keyword research, domain overview, backlinks, organic competitors, and site audit.",
             type: "CollectionPage",
@@ -62,7 +55,7 @@ export default async function FeaturesPage() {
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: "CodeStack SEO dashboard features",
+            name: "CodeStack SEO features",
             itemListElement: productFeatures.map((feature, i) => ({
               "@type": "ListItem",
               position: i + 1,
@@ -86,16 +79,16 @@ export default async function FeaturesPage() {
       />
       <PageHero
         eyebrow="Features"
-        title="SEO tools built into the CodeStack dashboard."
-        lead="Keyword research, domain overview, backlinks, organic search, competitive gaps, GSC, and site audit — marketing pages you can index, with live tools waiting in the dashboard."
+        title="SEO tools and capabilities from CodeStack."
+        lead="Keyword research, domain overview, backlinks, organic search, competitive gaps, GSC, and site audit — clear capabilities you can hire us to deliver."
         breadcrumbs={[{ label: "Features" }]}
       >
         <div className="flex flex-wrap gap-3">
           <Link
-            href={primaryHref}
+            href="/contact"
             className="inline-flex rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-[#010409] hover:bg-accent-deep"
           >
-            {primaryLabel}
+            Contact us
           </Link>
           <Link
             href="/pricing"
@@ -109,10 +102,10 @@ export default async function FeaturesPage() {
       <FeaturesCatalog />
 
       <PageCTA
-        primary={{ href: primaryHref, label: ctaLabel }}
+        primary={{ href: "/contact", label: "Contact us" }}
         secondary={{ href: "/pricing", label: "CodeStack Pro" }}
       >
-        Ready to run these tools on your own projects?
+        Ready to put these capabilities to work on your projects?
       </PageCTA>
     </PageShell>
   );

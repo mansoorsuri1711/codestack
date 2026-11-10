@@ -5,7 +5,6 @@ export type ProductFeature = {
   group: string;
   summary: string;
   description: string;
-  dashboardHref: string;
   /** Matching agency service page when intent overlaps (e.g. tool vs done-for-you). */
   relatedServiceSlug?: string;
   relatedServiceLabel?: string;
@@ -21,10 +20,9 @@ export const productFeatures: ProductFeature[] = [
     shortTitle: "Keywords",
     group: "Research",
     summary:
-      "Self-serve keyword research in the CodeStack dashboard — volume, difficulty, intent, and SERP context you run yourself.",
+      "keyword research with CodeStack — volume, difficulty, intent, and SERP context you run yourself.",
     description:
-      "The CodeStack Keyword Research Tool is a product feature, not a done-for-you service. Sign in, enter a seed keyword, review volume and competition signals, inspect SERP context, and save winners to your project. Prefer a team to research and deliver the list for you? Use our keyword research service instead.",
-    dashboardHref: "/dashboard/keyword-research-tool",
+      "The CodeStack Keyword Research Tool is a product feature, not a done-for-you service. Share a seed keyword, review volume and competition signals, inspect SERP context, and save winners to your project. Prefer a team to research and deliver the list for you? Use our keyword research service instead.",
     relatedServiceSlug: "keyword-research",
     relatedServiceLabel: "Keyword research service",
     highlights: [
@@ -54,7 +52,6 @@ export const productFeatures: ProductFeature[] = [
       "Paste keywords and get KD, search volume, and CPC in one bulk check.",
     description:
       "The Keyword Difficulty Checker scores how hard it is to rank for each keyword you already have — ideal for prioritizing content and SEO briefs without running full keyword discovery.",
-    dashboardHref: "/dashboard/keyword-difficulty-checker",
     highlights: [
       "Bulk paste up to 200 keywords",
       "KD score with Easy / Medium / Hard badges",
@@ -82,7 +79,6 @@ export const productFeatures: ProductFeature[] = [
       "See organic traffic estimates, keyword footprint, backlink strength, and top traffic keywords for any domain.",
     description:
       "The Domain Overview Tool gives you an Ahrefs-style snapshot of a site’s SEO profile: estimated organic traffic, ranking keywords by country, referring domains, and the keywords driving the most visits.",
-    dashboardHref: "/dashboard/domain-overview-tool",
     highlights: [
       "Organic traffic and traffic value estimates",
       "Keywords by country with flags and traffic",
@@ -111,7 +107,6 @@ export const productFeatures: ProductFeature[] = [
       "Analyze any domain’s link profile in the dashboard — growth, referring domains, and top linked pages.",
     description:
       "The CodeStack Backlink Checker is a research tool for inspecting link profiles yourself. Review overview metrics, backlink rows, referring domains, and top linked pages to judge authority. Need CodeStack to build high-authority placements for you? That is our backlinking service.",
-    dashboardHref: "/dashboard/backlink-checker",
     relatedServiceSlug: "backlinking",
     relatedServiceLabel: "Backlinking service",
     highlights: [
@@ -141,7 +136,6 @@ export const productFeatures: ProductFeature[] = [
       "Find questions people ask about your market and see how ChatGPT answers them — plus which sites it cites.",
     description:
       "Prompt Research surfaces People Also Ask–style questions for a keyword, loads ChatGPT answers, and shows cited sources so you can plan AEO content and track AI visibility.",
-    dashboardHref: "/dashboard/prompt-research-tool",
     highlights: [
       "Market questions ranked by SERP relevance",
       "ChatGPT answers with citation lists",
@@ -167,7 +161,6 @@ export const productFeatures: ProductFeature[] = [
       "Run one prompt across ChatGPT, Claude, Gemini, and Perplexity — compare answers and citations side by side.",
     description:
       "Prompt Explorer sends the same question to multiple AI engines so you can compare answers, audit citations, and check whether your brand is mentioned.",
-    dashboardHref: "/dashboard/prompt-explorer-tool",
     highlights: [
       "Four models in one view",
       "Citation and brand-mention highlighting",
@@ -193,7 +186,6 @@ export const productFeatures: ProductFeature[] = [
       "Track prompts your customers use with AI and inspect where your business is mentioned or cited.",
     description:
       "Prompt Tracking stores the questions that matter for your brand, runs them on a schedule across AI engines, and charts brand mentions and owned citations over time.",
-    dashboardHref: "/dashboard/prompt-tracking-tool",
     highlights: [
       "Track prompts and analyze on demand",
       "Brand mentions and owned citations",
@@ -219,7 +211,6 @@ export const productFeatures: ProductFeature[] = [
       "See the keywords a domain ranks for — positions, volume, and landing pages.",
     description:
       "The Organic Keyword Checker lists ranking terms for a target domain so you can find content that already works, gaps to fill, and pages that deserve more internal support.",
-    dashboardHref: "/dashboard/organic-keyword-checker",
     highlights: [
       "Ranked keyword table with positions",
       "Volume and traffic-oriented sorting",
@@ -245,7 +236,6 @@ export const productFeatures: ProductFeature[] = [
       "See ranked keywords with volume, position, and landing URL in one view.",
     description:
       "The Organic Position Checker shows the keywords a domain ranks for — with search volume, SERP position, and URL — so you can spot wins and gaps quickly.",
-    dashboardHref: "/dashboard/organic-position-checker",
     highlights: [
       "Keyword, volume, position, and URL table",
       "Filter and sort by position or volume",
@@ -271,7 +261,6 @@ export const productFeatures: ProductFeature[] = [
       "Find which URLs pull the most organic traffic and ranking keywords.",
     description:
       "The Top Pages Finder ranks a domain’s strongest organic URLs by estimated traffic and keyword count — ideal for content refreshes and internal linking priorities.",
-    dashboardHref: "/dashboard/top-pages-finder",
     highlights: [
       "Pages sorted by estimated organic traffic",
       "Keyword counts per URL",
@@ -296,7 +285,6 @@ export const productFeatures: ProductFeature[] = [
       "Discover domains competing in the same organic landscape.",
     description:
       "The Organic Competitor Finder surfaces sites overlapping your keyword space so you can study their pages, content angles, and link profiles with clearer targets.",
-    dashboardHref: "/dashboard/organic-competitor-finder",
     highlights: [
       "Competitor domain discovery",
       "Overlap-focused competitive view",
@@ -321,7 +309,6 @@ export const productFeatures: ProductFeature[] = [
       "Analyze your content first, then compare keywords, pages, backlinks, and referring domains against a competitor with a fact-based verdict.",
     description:
       "The Content Gap Finder builds a competitive content report: your organic keywords and pages, the competitor’s profile, keyword gaps and overlaps, backlinks, referring domains, and a clear score of who is performing better.",
-    dashboardHref: "/dashboard/content-gap-finder",
     highlights: [
       "Your-site analysis before competitor comparison",
       "Keywords, pages, backlinks, and referring domains",
@@ -347,7 +334,6 @@ export const productFeatures: ProductFeature[] = [
       "See which pages attract the strongest link attention on a domain.",
     description:
       "The Best by Links Finder highlights pages that earn referring domains and backlinks — useful for outreach templates, content formats that attract links, and internal promotion.",
-    dashboardHref: "/dashboard/best-by-links-finder",
     highlights: [
       "Pages ranked by link strength",
       "Useful for digital PR research",
@@ -372,7 +358,6 @@ export const productFeatures: ProductFeature[] = [
       "Map how pages connect inside a site — structure, anchors, and most-linked URLs.",
     description:
       "The Internal Link Checker helps you understand crawl paths and authority flow: overview links, most-linked pages, and internal anchor text so you can strengthen important URLs.",
-    dashboardHref: "/dashboard/internal-link-checker",
     highlights: [
       "Internal link overview",
       "Most linked pages",
@@ -397,7 +382,6 @@ export const productFeatures: ProductFeature[] = [
       "Connect Google Search Console and review clicks, queries, and performance inside CodeStack.",
     description:
       "The GSC Insights Tool pulls Search Console data into your dashboard so real clicks and impressions sit next to keyword research and rank tracking — not in a separate tab forever.",
-    dashboardHref: "/dashboard/gsc-insights-tool",
     highlights: [
       "Google Search Console connection",
       "Query and performance insights",
@@ -422,7 +406,6 @@ export const productFeatures: ProductFeature[] = [
       "Track keyword positions over time for the markets and domains you care about.",
     description:
       "The Rank Tracker monitors the keywords you choose so you can see movement, protect wins, and report progress without rebuilding spreadsheets every week.",
-    dashboardHref: "/dashboard/rank-tracker",
     highlights: [
       "Keyword lists tied to your project",
       "Refresh and discover workflows",
@@ -447,7 +430,6 @@ export const productFeatures: ProductFeature[] = [
       "Keep a living list of keywords you want to target, track, or brief to writers.",
     description:
       "The Saved Keywords Manager stores research wins in one place so keyword research, content planning, and rank tracking stay connected inside CodeStack.",
-    dashboardHref: "/dashboard/saved-keywords-manager",
     highlights: [
       "Save keywords from research",
       "Project-scoped keyword lists",
@@ -469,10 +451,9 @@ export const productFeatures: ProductFeature[] = [
     shortTitle: "Audit",
     group: "My Site",
     summary:
-      "Self-serve technical SEO checks in the dashboard — crawl signals, schema, performance, and fix priorities.",
+      "technical SEO checks in the dashboard — crawl signals, schema, performance, and fix priorities.",
     description:
       "The CodeStack Site Audit Tool helps you scan for technical issues yourself: crawl directives, structured data, performance signals, and prioritized findings. Want CodeStack to audit and implement fixes as a service? See Technical SEO & site audits.",
-    dashboardHref: "/dashboard/site-audit-tool",
     relatedServiceSlug: "technical-seo",
     relatedServiceLabel: "Technical SEO & site audits",
     highlights: [

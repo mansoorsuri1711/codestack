@@ -7,15 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: [
-          "/api/",
-          "/verify-email",
-          "/auth/",
-          "/pricing/success",
-          "/pricing/cancel",
-          "/profile",
-          "/dashboard",
-        ],
       },
       {
         userAgent: "LinkedInBot",

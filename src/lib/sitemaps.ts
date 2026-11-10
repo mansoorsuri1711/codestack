@@ -40,8 +40,6 @@ export const pageSitemapEntries: PageSitemapEntry[] = [
   },
   { path: "/seo-2026", priority: 0.9, changeFrequency: "monthly" },
   { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/login", priority: 0.7, changeFrequency: "monthly" },
-  { path: "/register", priority: 0.7, changeFrequency: "monthly" },
   { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
   { path: "/terms", priority: 0.3, changeFrequency: "yearly" },
   { path: "/refund", priority: 0.3, changeFrequency: "yearly" },
@@ -143,32 +141,6 @@ export const imageSitemapEntries: ImageSitemapEntry[] = [
         "/seo-company-gilgit-baltistan",
         "Best SEO Company in Gilgit-Baltistan — CodeStack",
       ),
-    ],
-  },
-  {
-    pagePath: "/seo-2026",
-    images: [pageFeatureImage("/seo-2026", "SEO in 2026 — CodeStack")],
-  },
-  {
-    pagePath: "/contact",
-    images: [pageFeatureImage("/contact", "Contact CodeStack")],
-  },
-  {
-    pagePath: "/login",
-    images: [
-      {
-        loc: `${SITE_URL}/brand/code-stack.webp`,
-        title: "CodeStack login",
-      },
-    ],
-  },
-  {
-    pagePath: "/register",
-    images: [
-      {
-        loc: `${SITE_URL}/brand/code-stack.webp`,
-        title: "CodeStack register",
-      },
     ],
   },
   {

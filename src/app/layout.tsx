@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
-import { auth } from "@/auth";
 import Providers from "@/components/Providers";
 import AttributionCapture from "@/components/AttributionCapture";
 import JsonLd from "@/components/JsonLd";
@@ -158,13 +157,11 @@ export const viewport: Viewport = {
   colorScheme: "dark light",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = await auth();
-
   return (
     <html
       lang="en-PK"
@@ -183,7 +180,7 @@ export default async function RootLayout({
         suppressHydrationWarning
       >
         <JsonLd data={siteGraphJsonLd()} />
-        <Providers session={session}>
+        <Providers>
           <AttributionCapture />
           {children}
         </Providers>

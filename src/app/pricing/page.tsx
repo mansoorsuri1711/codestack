@@ -69,10 +69,9 @@ export default function PricingPage() {
         title="One package. Complete SEO command center."
         lead={
           <>
-            Get complete access to all SEO tools, keyword research, live backlinks
-            analysis, site audits, rank tracking, and AI search intelligence for just $10 USD.
-            Instant checkout via Stripe (Cards, Apple Pay, Google Pay). Need custom enterprise
-            requirements?{" "}
+            Get complete access to SEO strategy, keyword research, backlinks,
+            site audits, rank tracking, and content support for just $10 USD.
+            Need a custom package?{" "}
             <Link href="/contact" className="text-accent hover:underline">
               Contact us
             </Link>

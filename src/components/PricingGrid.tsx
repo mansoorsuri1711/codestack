@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Check, ShieldCheck, Sparkles } from "lucide-react";
-import CheckoutButton from "./CheckoutButton";
+import { Check, Sparkles } from "lucide-react";
 import FadeIn from "./FadeIn";
 import { plans } from "@/lib/pricing";
 
@@ -44,9 +43,9 @@ export default function PricingGrid() {
                   <span className="font-display text-4xl font-extrabold text-snow md:text-5xl">
                     ${plan.priceUsd}
                   </span>
-                  <span className="text-sm font-medium text-ink-muted">/month</span>
+                  <span className="text-sm font-medium text-ink-muted">USD</span>
                 </div>
-                <span className="mt-1 text-xs text-ink-muted">Cancel anytime</span>
+                <span className="mt-1 text-xs text-ink-muted">Contact to get started</span>
               </div>
             </div>
 
@@ -68,20 +67,20 @@ export default function PricingGrid() {
               <div className="flex flex-col justify-between rounded-xl border border-line bg-bg/50 p-6">
                 <div>
                   <h3 className="text-base font-semibold text-snow">
-                    Get Instant Access
+                    Talk to CodeStack
                   </h3>
                   <p className="mt-2 text-xs leading-relaxed text-ink-muted">
-                    Unlock all core SEO modules, backlink analytics, rank tracking, internal links architecture, and AI-powered auditing tools.
+                    Tell us your niche and goals — we&apos;ll map the right SEO and web package for you.
                   </p>
                 </div>
 
                 <div className="mt-6">
-                  <CheckoutButton planId={plan.id} />
-
-                  <p className="mt-3 text-center text-xs text-ink-muted flex items-center justify-center gap-1.5">
-                    <ShieldCheck className="h-4 w-4 text-accent" />
-                    <span>Secured by Stripe Checkout · 30-Day Money-Back Guarantee</span>
-                  </p>
+                  <Link
+                    href="/contact"
+                    className="inline-flex w-full items-center justify-center rounded-md bg-accent px-4 py-3 text-sm font-semibold text-[#010409] hover:bg-accent-deep"
+                  >
+                    Contact us
+                  </Link>
                 </div>
               </div>
             </div>
