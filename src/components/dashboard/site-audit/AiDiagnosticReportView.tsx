@@ -188,7 +188,7 @@ export function AiDiagnosticReportView({
                 {activeTab === "verdict" ? (
                   <div className="space-y-4">
                     <p className="text-xs text-ink-muted">
-                      Detailed root causes identified by SkillStack AI explaining why this domain is losing rankings or failing to reach position #1 on Google.
+                      Detailed root causes identified by CodeStack AI explaining why this domain is losing rankings or failing to reach position #1 on Google.
                     </p>
                     <div className="space-y-3">
                       {report.rootCauses.map((rc, idx) => (

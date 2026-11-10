@@ -15,7 +15,7 @@ export function TopUpgradeBanner() {
   return (
     <div className="flex items-center justify-between rounded-xl border border-line bg-bg-elevated px-4 py-3 text-xs text-snow/90">
       <p>
-        SkillStack Project Workspace.{" "}
+        CodeStack Project Workspace.{" "}
         <Link href="/pricing" className="font-semibold text-accent underline hover:text-snow transition">
           Upgrade plan
         </Link>{" "}

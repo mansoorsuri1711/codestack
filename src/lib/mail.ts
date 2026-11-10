@@ -2,9 +2,9 @@ import fs from "fs";
 import path from "path";
 import nodemailer from "nodemailer";
 
-const LOGO_CID = "skillstack-logo@skillstack.com.pk";
+const LOGO_CID = "codestack-logo@codestackintl.com";
 /** PNG — WebP is poorly supported in Gmail and many other clients. */
-const LOGO_FILENAME = "skill-stack-email.png";
+const LOGO_FILENAME = "code-stack-email.png";
 const LOGO_PATH = path.join(process.cwd(), "public/brand", LOGO_FILENAME);
 
 function getTransporter() {
@@ -46,33 +46,33 @@ function siteBaseUrl() {
   return (
     process.env.AUTH_URL ||
     process.env.NEXTAUTH_URL ||
-    "https://skillstack.com.pk"
+    "https://codestackintl.com"
   );
 }
 
 /**
- * Inbox “From” name. Prefer EMAIL_FROM; otherwise wrap SMTP_USER as SkillStack.
- * Example: SkillStack <hello@skillstack.com.pk>
+ * Inbox “From” name. Prefer EMAIL_FROM; otherwise wrap SMTP_USER as CodeStack.
+ * Example: CodeStack <hello@codestackintl.com>
  */
 function mailFromAddress() {
   const configured = process.env.EMAIL_FROM?.trim();
   if (configured) {
     // Already has a display name: Name <email>
     if (/^[^<]+<[^>]+>$/.test(configured)) return configured;
-    // Bare address — add SkillStack name
-    return `SkillStack <${configured}>`;
+    // Bare address — add CodeStack name
+    return `CodeStack <${configured}>`;
   }
   const smtpUser = process.env.SMTP_USER?.trim();
   if (!smtpUser) throw new Error("EMAIL_FROM or SMTP_USER must be set");
   if (/^[^<]+<[^>]+>$/.test(smtpUser)) return smtpUser;
-  return `SkillStack <${smtpUser}>`;
+  return `CodeStack <${smtpUser}>`;
 }
 
 function logoHostedUrl() {
   // Prefer production CDN URL so logos resolve even when AUTH_URL is localhost
   const base = (
     process.env.AUTH_URL?.includes("localhost")
-      ? "https://skillstack.com.pk"
+      ? "https://codestackintl.com"
       : siteBaseUrl()
   ).replace(/\/$/, "");
   return `${base}/brand/${LOGO_FILENAME}`;
@@ -92,8 +92,8 @@ function logoAttachment() {
 /** Hosted PNG first (Gmail-friendly); CID is a secondary src for some desktop clients. */
 function logoImgTag() {
   // Use absolute production URL first, with embedded CID as fallback
-  const hosted = "https://skillstack.com.pk/brand/skill-stack-email.png";
-  return `<img src="${hosted}" src-cid="cid:${LOGO_CID}" width="28" height="28" alt="SkillStack" style="display:block;border:0;outline:none;text-decoration:none;width:28px;height:28px;border-radius:4px;" />`;
+  const hosted = "https://codestackintl.com/brand/code-stack-email.png";
+  return `<img src="${hosted}" src-cid="cid:${LOGO_CID}" width="28" height="28" alt="CodeStack" style="display:block;border:0;outline:none;text-decoration:none;width:28px;height:28px;border-radius:4px;" />`;
 }
 
 function buildVerificationHtml(name: string, verifyUrl: string) {
@@ -106,7 +106,7 @@ function buildVerificationHtml(name: string, verifyUrl: string) {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <title>Verify your SkillStack account</title>
+  <title>Verify your CodeStack account</title>
 </head>
 <body style="margin:0;padding:0;background:#010409;-webkit-font-smoothing:antialiased;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#010409;padding:40px 16px;">
@@ -127,7 +127,7 @@ function buildVerificationHtml(name: string, verifyUrl: string) {
                           ${logoImgTag()}
                         </td>
                         <td style="padding-left:12px;vertical-align:middle;">
-                          <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.03em;color:#f0f3f6;">SkillStack<span style="color:#2dd4bf;font-size:10px;vertical-align:super;">●</span></span>
+                          <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.03em;color:#f0f3f6;">CodeStack<span style="color:#2dd4bf;font-size:10px;vertical-align:super;">●</span></span>
                         </td>
                       </tr>
                     </table>
@@ -142,7 +142,7 @@ function buildVerificationHtml(name: string, verifyUrl: string) {
                 Hi ${safeName},
               </p>
               <p style="margin:0 0 28px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.55;color:#c9d1d9;">
-                Welcome to <strong style="color:#f0f3f6;font-weight:600;">SkillStack</strong>. One click activates your account so you can sign in and get started.
+                Welcome to <strong style="color:#f0f3f6;font-weight:600;">CodeStack</strong>. One click activates your account so you can sign in and get started.
               </p>
 
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px;">
@@ -180,10 +180,10 @@ function buildVerificationHtml(name: string, verifyUrl: string) {
           <tr>
             <td style="padding:28px 8px 0;text-align:center;">
               <p style="margin:0 0 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;font-weight:600;color:#8b949e;">
-                SkillStack · smc-private limited
+                CodeStack · smc-private limited
               </p>
               <p style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:1.5;color:#484f58;">
-                https://skillstack.com.pk<br />
+                https://codestackintl.com<br />
                 Pakistan &amp; international
               </p>
             </td>
@@ -210,22 +210,22 @@ export async function sendVerificationEmail(options: {
   await transporter.sendMail({
     from: mailFromAddress(),
     to: options.to,
-    subject: "Confirm your email · SkillStack",
+    subject: "Confirm your email · CodeStack",
     text: `Hi ${options.name},
 
-Welcome to SkillStack. Confirm your email to activate your account:
+Welcome to CodeStack. Confirm your email to activate your account:
 
 ${verifyUrl}
 
 This link expires in 24 hours. If you didn’t create an account, ignore this email.
 
-— SkillStack
-https://skillstack.com.pk`,
+— CodeStack
+https://codestackintl.com`,
     html: buildVerificationHtml(options.name, verifyUrl),
     attachments: logo ? [logo] : undefined,
     headers: {
       "X-Entity-Ref-ID": options.token.slice(0, 16),
-      "List-Unsubscribe": `<mailto:hello@skillstack.com.pk?subject=unsubscribe>`,
+      "List-Unsubscribe": `<mailto:hello@codestackintl.com?subject=unsubscribe>`,
     },
   });
 }
@@ -240,7 +240,7 @@ function buildPasswordResetHtml(name: string, resetUrl: string) {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <title>Reset your SkillStack password</title>
+  <title>Reset your CodeStack password</title>
 </head>
 <body style="margin:0;padding:0;background:#010409;-webkit-font-smoothing:antialiased;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#010409;padding:40px 16px;">
@@ -261,7 +261,7 @@ function buildPasswordResetHtml(name: string, resetUrl: string) {
                           ${logoImgTag()}
                         </td>
                         <td style="padding-left:12px;vertical-align:middle;">
-                          <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.03em;color:#f0f3f6;">SkillStack<span style="color:#2dd4bf;font-size:10px;vertical-align:super;">●</span></span>
+                          <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.03em;color:#f0f3f6;">CodeStack<span style="color:#2dd4bf;font-size:10px;vertical-align:super;">●</span></span>
                         </td>
                       </tr>
                     </table>
@@ -276,7 +276,7 @@ function buildPasswordResetHtml(name: string, resetUrl: string) {
                 Hi ${safeName},
               </p>
               <p style="margin:0 0 28px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.55;color:#c9d1d9;">
-                We received a request to reset your <strong style="color:#f0f3f6;font-weight:600;">SkillStack</strong> password. Click below to choose a new one.
+                We received a request to reset your <strong style="color:#f0f3f6;font-weight:600;">CodeStack</strong> password. Click below to choose a new one.
               </p>
 
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px;">
@@ -314,10 +314,10 @@ function buildPasswordResetHtml(name: string, resetUrl: string) {
           <tr>
             <td style="padding:28px 8px 0;text-align:center;">
               <p style="margin:0 0 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;font-weight:600;color:#8b949e;">
-                SkillStack · smc-private limited
+                CodeStack · smc-private limited
               </p>
               <p style="margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:1.5;color:#484f58;">
-                https://skillstack.com.pk<br />
+                https://codestackintl.com<br />
                 Pakistan &amp; international
               </p>
             </td>
@@ -344,22 +344,22 @@ export async function sendPasswordResetEmail(options: {
   await transporter.sendMail({
     from: mailFromAddress(),
     to: options.to,
-    subject: "Reset your password · SkillStack",
+    subject: "Reset your password · CodeStack",
     text: `Hi ${options.name},
 
-We received a request to reset your SkillStack password. Open this link to choose a new one:
+We received a request to reset your CodeStack password. Open this link to choose a new one:
 
 ${resetUrl}
 
 This link expires in 1 hour. If you didn’t request a reset, ignore this email.
 
-— SkillStack
-https://skillstack.com.pk`,
+— CodeStack
+https://codestackintl.com`,
     html: buildPasswordResetHtml(options.name, resetUrl),
     attachments: logo ? [logo] : undefined,
     headers: {
       "X-Entity-Ref-ID": options.token.slice(0, 16),
-      "List-Unsubscribe": `<mailto:hello@skillstack.com.pk?subject=unsubscribe>`,
+      "List-Unsubscribe": `<mailto:hello@codestackintl.com?subject=unsubscribe>`,
     },
   });
 }
@@ -376,7 +376,7 @@ function buildContactInquiryHtml(options: {
   const safeTopic = escapeHtml(options.topic);
   const safeUserId = escapeHtml(options.userId || "n/a");
   const safeMessage = escapeHtml(options.message).replace(/\n/g, "<br/>");
-  const mailto = `mailto:${encodeURIComponent(options.email)}?subject=${encodeURIComponent(`Re: SkillStack — ${options.topic}`)}`;
+  const mailto = `mailto:${encodeURIComponent(options.email)}?subject=${encodeURIComponent(`Re: CodeStack — ${options.topic}`)}`;
   const font =
     "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif";
 
@@ -398,7 +398,7 @@ function buildContactInquiryHtml(options: {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
-  <title>SkillStack inquiry — ${safeTopic}</title>
+  <title>CodeStack inquiry — ${safeTopic}</title>
 </head>
 <body style="margin:0;padding:0;background:#010409;-webkit-font-smoothing:antialiased;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#010409;padding:40px 16px;">
@@ -419,7 +419,7 @@ function buildContactInquiryHtml(options: {
                           ${logoImgTag()}
                         </td>
                         <td style="padding-left:12px;vertical-align:middle;">
-                          <span style="font-family:${font};font-size:20px;font-weight:700;letter-spacing:-0.03em;color:#f0f3f6;">SkillStack<span style="color:#2dd4bf;font-size:10px;vertical-align:super;">●</span></span>
+                          <span style="font-family:${font};font-size:20px;font-weight:700;letter-spacing:-0.03em;color:#f0f3f6;">CodeStack<span style="color:#2dd4bf;font-size:10px;vertical-align:super;">●</span></span>
                         </td>
                       </tr>
                     </table>
@@ -478,10 +478,10 @@ function buildContactInquiryHtml(options: {
           <tr>
             <td style="padding:28px 8px 0;text-align:center;">
               <p style="margin:0 0 6px;font-family:${font};font-size:13px;font-weight:600;color:#8b949e;">
-                SkillStack · smc-private limited
+                CodeStack · smc-private limited
               </p>
               <p style="margin:0;font-family:${font};font-size:12px;line-height:1.5;color:#484f58;">
-                Contact form notification · https://skillstack.com.pk
+                Contact form notification · https://codestackintl.com
               </p>
             </td>
           </tr>
@@ -500,7 +500,7 @@ export async function sendContactInquiry(options: {
   message: string;
   userId?: string;
 }) {
-  const to = process.env.CONTACT_TO || "hello@skillstack.com.pk";
+  const to = process.env.CONTACT_TO || "hello@codestackintl.com";
   const transporter = getTransporter();
   const logo = logoAttachment();
 
@@ -508,8 +508,8 @@ export async function sendContactInquiry(options: {
     from: mailFromAddress(),
     to,
     replyTo: options.email,
-    subject: `SkillStack inquiry — ${options.topic}`,
-    text: `New SkillStack brief
+    subject: `CodeStack inquiry — ${options.topic}`,
+    text: `New CodeStack brief
 
 Name: ${options.name}
 Email: ${options.email}
@@ -519,8 +519,8 @@ User ID: ${options.userId || "n/a"}
 Message:
 ${options.message}
 
-— SkillStack
-https://skillstack.com.pk`,
+— CodeStack
+https://codestackintl.com`,
     html: buildContactInquiryHtml(options),
     attachments: logo ? [logo] : undefined,
   });

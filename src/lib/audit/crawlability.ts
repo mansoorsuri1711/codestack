@@ -22,7 +22,7 @@ export async function probeCrawlability(
         signal: AbortSignal.timeout(12_000),
         headers: {
           "User-Agent":
-            "Mozilla/5.0 (compatible; SkillStack-Audit/1.0; +https://skillstack.com.pk)",
+            "Mozilla/5.0 (compatible; CodeStack-Audit/1.0; +https://codestackintl.com)",
         },
       });
 

@@ -9,25 +9,25 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Login | Sign in to SkillStack",
+  title: "Login | Sign in to CodeStack",
   description:
-    "Sign in to your SkillStack account to manage projects, profile, and SEO services. Official SkillStack login for clients in Pakistan and worldwide.",
+    "Sign in to your CodeStack account to manage projects, profile, and SEO services. Official CodeStack login for clients in Pakistan and worldwide.",
   keywords: [
-    "SkillStack login",
-    "Skill Stack sign in",
-    "SkillStack account",
-    "login skillstack.com.pk",
+    "CodeStack login",
+    "Code Stack sign in",
+    "CodeStack account",
+    "login codestackintl.com",
   ],
   robots: { index: true, follow: true },
   alternates: { canonical: absoluteUrl("/login") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/login"),
-    title: "Login · SkillStack",
-    description: "Sign in to your SkillStack account.",
+    title: "Login · CodeStack",
+    description: "Sign in to your CodeStack account.",
   }),
   twitter: pageTwitter({
-    title: "Login · SkillStack",
-    description: "Sign in to your SkillStack account.",
+    title: "Login · CodeStack",
+    description: "Sign in to your CodeStack account.",
   }),
 };
 
@@ -49,10 +49,10 @@ export default async function LoginPage({
 
   return (
     <AuthShell
-      title="Sign in to SkillStack"
+      title="Sign in to CodeStack"
       footer={
         <>
-          New to SkillStack?{" "}
+          New to CodeStack?{" "}
           <Link
             href={registerHref}
             className="font-medium text-accent hover:underline"

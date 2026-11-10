@@ -8,14 +8,14 @@ import { SITE_EMAIL, SITE_EMAIL_HREF, absoluteUrl, webPageJsonLd } from "@/lib/s
 export const metadata: Metadata = {
   title: "Privacy policy",
   description:
-    "How SkillStack Private Limited collects, uses, and protects personal information on skillstack.com.pk.",
+    "How CodeStack Private Limited collects, uses, and protects personal information on codestackintl.com.",
   alternates: { canonical: absoluteUrl("/privacy") },
 };
 
 const sections = [
   {
     title: "Who we are",
-    body: `SkillStack Private Limited (“SkillStack”, “we”, “us”) operates skillstack.com.pk. Contact: ${SITE_EMAIL}.`,
+    body: `CodeStack Private Limited (“CodeStack”, “we”, “us”) operates codestackintl.com. Contact: ${SITE_EMAIL}.`,
   },
   {
     title: "Information we collect",
@@ -57,15 +57,15 @@ export default function PrivacyPage() {
       <JsonLd
         data={webPageJsonLd({
           path: "/privacy",
-          title: "Privacy policy · SkillStack",
+          title: "Privacy policy · CodeStack",
           description:
-            "How SkillStack Private Limited collects, uses, and protects personal information.",
+            "How CodeStack Private Limited collects, uses, and protects personal information.",
         })}
       />
       <PageHero
         eyebrow="Legal"
         title="Privacy policy"
-        lead="Last updated: 30 July 2026. Clear rules for how we handle your data on SkillStack."
+        lead="Last updated: 30 July 2026. Clear rules for how we handle your data on CodeStack."
         breadcrumbs={[{ label: "Privacy" }]}
       />
       <div className="mx-auto max-w-3xl space-y-10 px-6 py-12 md:px-8 md:py-16">

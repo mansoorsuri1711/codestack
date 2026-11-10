@@ -61,7 +61,7 @@ export default function HomeSections() {
               Built in Gilgit-Baltistan. Aimed across Pakistan and beyond.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-ink-muted">
-              SkillStack is a Gilgit-Baltistan-based tech company led by{" "}
+              CodeStack is a Gilgit-Baltistan-based tech company led by{" "}
               <span className="font-semibold text-snow">Mansoor Khan</span>, CEO —
               delivering SEO, keyword research, content writing, blogging, and
               backlinks for Gilgit-Baltistan, Pakistan, and clients worldwide.
@@ -70,7 +70,7 @@ export default function HomeSections() {
               href="/about"
               className="mt-6 inline-block text-sm font-medium text-accent hover:underline"
             >
-              More about SkillStack →
+              More about CodeStack →
             </Link>
           </FadeIn>
           <FadeIn delay={0.12}>
@@ -80,7 +80,7 @@ export default function HomeSections() {
                 their own.”
               </blockquote>
               <p className="mt-6 text-sm text-ink-muted">
-                — Mansoor Khan, CEO · SkillStack Private Limited
+                — Mansoor Khan, CEO · CodeStack Private Limited
               </p>
             </aside>
           </FadeIn>

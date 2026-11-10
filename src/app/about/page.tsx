@@ -15,24 +15,24 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "About | SkillStack Pakistan, Best SEO Company",
+  title: "About | CodeStack Pakistan, Best SEO Company",
   description:
-    "Meet SkillStack Private Limited and CEO Mansoor Khan — the best SEO company and SEO freelancer in Gilgit-Baltistan. Delivering keyword research, Google ranking, content writing, backlinks, and web development across Pakistan and internationally.",
+    "Meet CodeStack Private Limited and CEO Mansoor Khan — the best SEO company and SEO freelancer in Gilgit-Baltistan. Delivering keyword research, Google ranking, content writing, backlinks, and web development across Pakistan and internationally.",
   alternates: { canonical: absoluteUrl("/about") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/about"),
-    title: "About SkillStack",
+    title: "About CodeStack",
     description:
       "Built in Gilgit-Baltistan. Serving Pakistan and international clients. Led by CEO Mansoor Khan.",
   }),
   twitter: pageTwitter({
-    title: "About SkillStack",
+    title: "About CodeStack",
     description: "Built in Gilgit-Baltistan. Serving Pakistan and international clients. Led by CEO Mansoor Khan.",
   }),
 };
 
 const facts = [
-  { label: "Legal name", value: "SkillStack Private Limited" },
+  { label: "Legal name", value: "CodeStack Private Limited" },
   { label: "Base", value: "Gilgit-Baltistan, Pakistan" },
   { label: "Focus", value: "SEO, ranking, content & web" },
   { label: "Reach", value: "Pakistan & international" },
@@ -45,9 +45,9 @@ export default function AboutPage() {
         data={[
           webPageJsonLd({
             path: "/about",
-            title: "About SkillStack",
+            title: "About CodeStack",
             description:
-              "Meet SkillStack Private Limited and CEO Mansoor Khan — web development and SEO for Pakistan and the world.",
+              "Meet CodeStack Private Limited and CEO Mansoor Khan — web development and SEO for Pakistan and the world.",
             type: "AboutPage",
           }),
           {
@@ -61,7 +61,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="Built in Gilgit-Baltistan. Aimed across Pakistan and beyond."
-        lead="SkillStack Private Limited helps clients turn domains into ranking, readable sites — with transparent craft from our base in Gilgit-Baltistan."
+        lead="CodeStack Private Limited helps clients turn domains into ranking, readable sites — with transparent craft from our base in Gilgit-Baltistan."
         breadcrumbs={[{ label: "About" }]}
       />
 
@@ -79,7 +79,7 @@ export default function AboutPage() {
               From freelance craft to a company that ranks and earns.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-ink-muted">
-              SkillStack grew from focused freelance work — websites, SEO ranking,
+              CodeStack grew from focused freelance work — websites, SEO ranking,
               keyword systems, and ad-driven traffic sites — into a company led by{" "}
               <span className="font-semibold text-snow">Mansoor Khan</span>, CEO.
               What started as shipping reliable ranking projects is now a structured
@@ -99,7 +99,7 @@ export default function AboutPage() {
               {/* Photo */}
               <Image
                 src="/mansoor-khan.webp"
-                alt="Mansoor Khan — CEO, SkillStack Private Limited"
+                alt="Mansoor Khan — CEO, CodeStack Private Limited"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 quality={100}
@@ -143,7 +143,7 @@ export default function AboutPage() {
                   can stand on their own.&rdquo;
                 </blockquote>
                 <p className="mt-3 text-xs font-medium uppercase tracking-[0.14em] text-brand">
-                  Mansoor Khan &mdash; CEO, SkillStack Private Limited
+                  Mansoor Khan &mdash; CEO, CodeStack Private Limited
                 </p>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function AboutPage() {
 
       <PageCTA
         tone="elevated"
-        primary={{ href: "/contact", label: "Contact SkillStack" }}
+        primary={{ href: "/contact", label: "Contact CodeStack" }}
         secondary={{ href: "/services", label: "Explore services" }}
       >
         Want to work with us — or join the team learning culture?

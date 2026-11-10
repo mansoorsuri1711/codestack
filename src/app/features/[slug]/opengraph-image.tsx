@@ -1,7 +1,7 @@
 import { createFeatureOgImage, OG_CONTENT_TYPE, OG_SIZE } from "@/lib/og";
 import { getFeatureBySlug, getFeatureSlugs } from "@/lib/features";
 
-export const alt = "SkillStack feature";
+export const alt = "CodeStack feature";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 
@@ -17,9 +17,9 @@ export default async function Image({ params }: Props) {
 
   return createFeatureOgImage({
     eyebrow: "Feature · Tool",
-    title: feature?.title ?? "SkillStack Features",
+    title: feature?.title ?? "CodeStack Features",
     subtitle:
       feature?.summary.slice(0, 140) ??
-      "Self-serve SEO dashboard tools from SkillStack.",
+      "Self-serve SEO dashboard tools from CodeStack.",
   });
 }

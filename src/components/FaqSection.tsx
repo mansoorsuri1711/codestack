@@ -5,7 +5,7 @@ import FadeIn from "@/components/FadeIn";
 import { siteFaqs } from "@/lib/seo";
 
 export default function FaqSection({
-  title = "Questions people ask about SkillStack",
+  title = "Questions people ask about CodeStack",
   eyebrow = "FAQ",
   faqs = siteFaqs,
 }: {
@@ -27,7 +27,7 @@ export default function FaqSection({
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-muted sm:text-base">
             Straight answers for search, answer engines, and anyone comparing SEO
-            or web partners — including people looking up SkillStack by name.
+            or web partners — including people looking up CodeStack by name.
           </p>
         </FadeIn>
 

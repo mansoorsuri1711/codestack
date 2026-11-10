@@ -1,6 +1,6 @@
-# SkillStack
+# CodeStack
 
-Corporate site for **SkillStack.com.pk** — web development, SEO, keyword ranking, and ad monetization.
+Corporate site for **codestackintl.com** — web development, SEO, keyword ranking, and ad monetization.
 
 ## Stack
 

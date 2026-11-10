@@ -42,7 +42,7 @@ const columns = [
       { href: "/features/domain-overview-tool", label: "Domain overview tool" },
       { href: "/features/backlink-checker", label: "Backlink checker" },
       { href: "/features/rank-tracker", label: "Rank tracker" },
-      { href: "/pricing", label: "SkillStack Pro" },
+      { href: "/pricing", label: "CodeStack Pro" },
     ],
   },
   {
@@ -171,10 +171,10 @@ export default function Footer() {
               href={SITE_URL}
               className="text-accent underline underline-offset-2 transition-colors hover:opacity-80"
             >
-              SkillStack.com.pk
+              codestackintl.com
             </Link>
             {" "}
-            · SkillStack Private Limited
+            · CodeStack Private Limited
           </p>
           <p>{OFFICE.shortLabel}</p>
         </div>

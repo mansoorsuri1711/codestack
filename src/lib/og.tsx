@@ -13,7 +13,7 @@ export type FeatureOgProps = {
 };
 
 async function loadBrandIconDataUrl() {
-  const path = join(process.cwd(), "public/brand/skill-stack-email.png");
+  const path = join(process.cwd(), "public/brand/code-stack-email.png");
   const bytes = await readFile(path);
   return `data:image/png;base64,${bytes.toString("base64")}`;
 }
@@ -21,7 +21,7 @@ async function loadBrandIconDataUrl() {
 /** Branded 1200×630 feature / Open Graph image for social + Google previews. */
 export async function createFeatureOgImage({
   title,
-  eyebrow = "SkillStack",
+  eyebrow = "CodeStack",
   subtitle = "Web development, SEO & ranking for Pakistan and the world",
 }: FeatureOgProps) {
   const icon = await loadBrandIconDataUrl();
@@ -87,7 +87,7 @@ export async function createFeatureOgImage({
                 letterSpacing: "-0.02em",
               }}
             >
-              SkillStack
+              CodeStack
             </span>
             <span
               style={{
@@ -157,7 +157,7 @@ export async function createFeatureOgImage({
           }}
         >
           <span style={{ color: "#8b949e", fontSize: 22 }}>
-            skillstack.com.pk
+            codestackintl.com
           </span>
           <span style={{ color: "#2dd4bf", fontSize: 20, fontWeight: 500 }}>
             SMC-Private Limited

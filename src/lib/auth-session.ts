@@ -26,7 +26,7 @@ export async function requireUser(request?: Request): Promise<
 > {
   if (request) {
     const headerKey =
-      request.headers.get("x-skillstack-key") ??
+      request.headers.get("x-codestack-key") ??
       request.headers.get("authorization")?.replace(/^Bearer\s+/i, "");
     if (headerKey?.startsWith("ss_")) {
       await connectDB();

@@ -20,7 +20,7 @@ export default function Hero() {
               className="font-display text-[2.75rem] font-bold leading-none tracking-tight text-snow sm:text-6xl md:text-7xl lg:text-8xl"
               data-speakable
             >
-              SkillStack
+              CodeStack
             </span>
             <JumpingDot />
           </h1>

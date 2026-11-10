@@ -16,7 +16,7 @@ export default function NotFound() {
           Page not found
         </h1>
         <p className="relative mt-4 max-w-md text-base text-ink-muted">
-          That URL isn&apos;t on SkillStack. Head home or jump to a core page.
+          That URL isn&apos;t on CodeStack. Head home or jump to a core page.
         </p>
         <div className="relative mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link

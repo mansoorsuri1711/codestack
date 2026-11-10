@@ -25,7 +25,7 @@ async function fetchWithTimeout(url: string, timeout = TIMEOUT_MS): Promise<Resp
     const res = await fetch(url, {
       signal: controller.signal,
       headers: {
-        "User-Agent": "Mozilla/5.0 (compatible; SkillStackBot/2.0; +https://skillstack.com.pk/bot)",
+        "User-Agent": "Mozilla/5.0 (compatible; CodeStackBot/2.0; +https://codestackintl.com/bot)",
       },
     });
     clearTimeout(id);
@@ -580,7 +580,7 @@ Sitemap: https://${domain}/sitemap.xml`,
     rankabilityScore: rankability,
     executiveSummary: {
       headline: overall >= 75 ? "Strong Technical Base with High Growth Potential" : "Critical SEO & AEO Bottlenecks Preventing Page 1 Rankings",
-      verdict: `SkillStack AI analyzed ${domain} across technical infrastructure, AEO schema entities, Core Web Vitals, and SERP positions. The website currently scores ${overall}/100. Resolving key schema deficiencies and targeting striking distance keywords will produce measurable impression gains within 30 days.`,
+      verdict: `CodeStack AI analyzed ${domain} across technical infrastructure, AEO schema entities, Core Web Vitals, and SERP positions. The website currently scores ${overall}/100. Resolving key schema deficiencies and targeting striking distance keywords will produce measurable impression gains within 30 days.`,
       topRankingBlocker: rootCauses[0]?.headline || "Topical Authority & Entity Schema Missing",
       estimatedGrowthPotential: "+35% to +120% Search Visibility after completing P0/P1 actions",
     },

@@ -16,9 +16,9 @@ import {
 } from "@/lib/seo";
 
 const PAGE_URL = absoluteUrl("/seo-2026");
-const TITLE = "SEO in 2026: How It Actually Works Now | SkillStack";
+const TITLE = "SEO in 2026: How It Actually Works Now | CodeStack";
 const DESC =
-  "SEO in 2026 is not just keywords and backlinks. Learn how AI Overviews, AEO, structured data, and citations have changed the game — and how SkillStack builds for every step of the new path.";
+  "SEO in 2026 is not just keywords and backlinks. Learn how AI Overviews, AEO, structured data, and citations have changed the game — and how CodeStack builds for every step of the new path.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "structured data SEO 2026",
     "brand mentions SEO",
     "SEO strategy 2026",
-    "SkillStack SEO Pakistan",
+    "CodeStack SEO Pakistan",
     "best SEO company Pakistan 2026",
   ],
   alternates: { canonical: PAGE_URL },
@@ -62,9 +62,9 @@ const articleJsonLd = {
   },
   publisher: {
     "@type": "Organization",
-    name: "SkillStack",
+    name: "CodeStack",
     url: SITE_URL,
-    logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/skill-stack.webp` },
+    logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/code-stack.webp` },
   },
   mainEntityOfPage: { "@type": "WebPage", "@id": PAGE_URL },
 };
@@ -107,10 +107,10 @@ const faqJsonLd = {
     },
     {
       "@type": "Question",
-      name: "How does SkillStack optimise for SEO in 2026?",
+      name: "How does CodeStack optimise for SEO in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "SkillStack covers all eight steps of the 2026 SEO path: technical health, AI Overview optimisation, entity structuring, AEO markup, multi-AI citation building, brand mention campaigns, and turning that authority into Google rankings and AI citations simultaneously.",
+        text: "CodeStack covers all eight steps of the 2026 SEO path: technical health, AI Overview optimisation, entity structuring, AEO markup, multi-AI citation building, brand mention campaigns, and turning that authority into Google rankings and AI citations simultaneously.",
       },
     },
   ],
@@ -120,7 +120,7 @@ const steps = [
   {
     n: "01",
     title: "Strong SEO Foundations",
-    body: `Before AI, before citations, before anything — your technical health determines whether Google and AI crawlers can even understand your site. Core Web Vitals (LCP under 2.5 s, CLS under 0.1, INP under 200 ms), clean crawl paths, proper canonical tags, and a schema-rich HTML structure are non-negotiable in 2026. A shaky foundation means none of the steps above it will stick. SkillStack audits every site for over 80 technical signals before writing a single word of content.`,
+    body: `Before AI, before citations, before anything — your technical health determines whether Google and AI crawlers can even understand your site. Core Web Vitals (LCP under 2.5 s, CLS under 0.1, INP under 200 ms), clean crawl paths, proper canonical tags, and a schema-rich HTML structure are non-negotiable in 2026. A shaky foundation means none of the steps above it will stick. CodeStack audits every site for over 80 technical signals before writing a single word of content.`,
     accent: "emerald",
   },
   {
@@ -132,13 +132,13 @@ const steps = [
   {
     n: "03",
     title: "Structure for AI",
-    body: `AI systems — whether Google's Gemini or OpenAI's GPT-4o — build knowledge graphs from structured data. JSON-LD schema markup (Organization, Article, FAQPage, HowTo, BreadcrumbList, Person, LocalBusiness) tells AI exactly what your entities are, how they relate, and why they are authoritative. Entity disambiguation — making clear that "SkillStack" is a company, not a concept — is especially critical for brand queries and AI Overview inclusion.`,
+    body: `AI systems — whether Google's Gemini or OpenAI's GPT-4o — build knowledge graphs from structured data. JSON-LD schema markup (Organization, Article, FAQPage, HowTo, BreadcrumbList, Person, LocalBusiness) tells AI exactly what your entities are, how they relate, and why they are authoritative. Entity disambiguation — making clear that "CodeStack" is a company, not a concept — is especially critical for brand queries and AI Overview inclusion.`,
     accent: "slate",
   },
   {
     n: "04",
     title: "Optimise for AEO",
-    body: `Answer Engine Optimisation (AEO) targets the AI layer directly. This means writing content in a question-and-answer format, adding FAQPage and HowTo schema, using speakable markup for voice answers, and structuring each page around a single primary query. In 2026, the content that gets cited by ChatGPT or Perplexity is content written specifically to answer — not just to rank. SkillStack's content team writes every article with AEO structure from the first draft.`,
+    body: `Answer Engine Optimisation (AEO) targets the AI layer directly. This means writing content in a question-and-answer format, adding FAQPage and HowTo schema, using speakable markup for voice answers, and structuring each page around a single primary query. In 2026, the content that gets cited by ChatGPT or Perplexity is content written specifically to answer — not just to rank. CodeStack's content team writes every article with AEO structure from the first draft.`,
     accent: "teal",
   },
   {
@@ -156,13 +156,13 @@ const steps = [
   {
     n: "07",
     title: "Brand Mentions",
-    body: `Google's Natural Language Processing can now identify brand mentions without anchor text. A mention of "SkillStack" in a relevant article — even without a link — contributes to the entity's authority. Building brand mentions requires a systematic outreach strategy: press features, podcast appearances, community mentions, and social signals. SkillStack tracks brand mentions across the web and actively builds the off-site authority that AI systems and Google use to gauge trustworthiness.`,
+    body: `Google's Natural Language Processing can now identify brand mentions without anchor text. A mention of "CodeStack" in a relevant article — even without a link — contributes to the entity's authority. Building brand mentions requires a systematic outreach strategy: press features, podcast appearances, community mentions, and social signals. CodeStack tracks brand mentions across the web and actively builds the off-site authority that AI systems and Google use to gauge trustworthiness.`,
     accent: "rose",
   },
   {
     n: "08",
     title: "Cited AND Ranked",
-    body: `The final state of 2026 SEO is dual visibility: appearing in traditional Google rankings and being cited in AI answers simultaneously. Brands that achieve this receive organic traffic from two sources — the 60% of users who still click organic results and the growing segment who act on AI-cited recommendations. SkillStack's packages are designed to deliver this dual outcome, not one or the other.`,
+    body: `The final state of 2026 SEO is dual visibility: appearing in traditional Google rankings and being cited in AI answers simultaneously. Brands that achieve this receive organic traffic from two sources — the 60% of users who still click organic results and the growing segment who act on AI-cited recommendations. CodeStack's packages are designed to deliver this dual outcome, not one or the other.`,
     accent: "accent",
     final: true,
   },
@@ -210,7 +210,7 @@ export default function Seo2026Page() {
               <p>
                 The brands that succeed in 2026 are not the ones who rank #1 and stop there.
                 They are the ones who <strong>rank on Google and get cited in every AI answer</strong>.
-                This guide walks through each step of how that actually works — and how SkillStack
+                This guide walks through each step of how that actually works — and how CodeStack
                 builds for all eight simultaneously.
               </p>
             </div>
@@ -254,13 +254,13 @@ export default function Seo2026Page() {
           <FadeIn>
             <div className="rounded-xl border border-accent/25 bg-accent/5 p-6 sm:p-8">
               <p className="text-xs font-medium uppercase tracking-widest text-accent">
-                SkillStack covers all 8 steps
+                CodeStack covers all 8 steps
               </p>
               <h2 className="font-display mt-2 max-w-lg text-lg font-bold tracking-tight text-snow sm:text-2xl">
                 Ready to rank on Google and get cited by AI?
               </h2>
               <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-muted">
-                SkillStack is a Gilgit-Baltistan-based SEO company. Every package we offer
+                CodeStack is a Gilgit-Baltistan-based SEO company. Every package we offer
                 is designed around the 2026 path — from technical foundations through to
                 earning the AI citations that modern search requires.
               </p>
@@ -287,7 +287,7 @@ export default function Seo2026Page() {
       <div className="border-t border-line bg-bg-soft py-14 md:py-16">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 sm:flex-row sm:items-center sm:justify-between md:px-8">
           <FadeIn className="max-w-lg text-lg text-snow md:text-xl">
-            Every SkillStack package is built for the 2026 SEO path — from foundations to AI citations.
+            Every CodeStack package is built for the 2026 SEO path — from foundations to AI citations.
           </FadeIn>
           <FadeIn delay={0.08} className="flex flex-wrap items-center gap-3">
             <Link

@@ -8,18 +8,18 @@ import { SITE_EMAIL, absoluteUrl, webPageJsonLd } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Terms of service",
   description:
-    "Terms governing use of skillstack.com.pk and SkillStack Private Limited services.",
+    "Terms governing use of codestackintl.com and CodeStack Private Limited services.",
   alternates: { canonical: absoluteUrl("/terms") },
 };
 
 const sections = [
   {
     title: "Agreement",
-    body: "By using skillstack.com.pk or purchasing SkillStack services, you agree to these terms. If you do not agree, do not use the site or services.",
+    body: "By using codestackintl.com or purchasing CodeStack services, you agree to these terms. If you do not agree, do not use the site or services.",
   },
   {
     title: "Services",
-    body: "SkillStack provides web development, SEO, content, and related digital services. Scopes, timelines, and fees for paid work are confirmed in writing (proposal, checkout plan, or email) before work starts.",
+    body: "CodeStack provides web development, SEO, content, and related digital services. Scopes, timelines, and fees for paid work are confirmed in writing (proposal, checkout plan, or email) before work starts.",
   },
   {
     title: "Accounts",
@@ -43,7 +43,7 @@ const sections = [
   },
   {
     title: "Limitation of liability",
-    body: "To the maximum extent permitted by law, SkillStack’s total liability for any claim related to the site or a project is limited to the fees you paid us for that project in the three months before the claim.",
+    body: "To the maximum extent permitted by law, CodeStack’s total liability for any claim related to the site or a project is limited to the fees you paid us for that project in the three months before the claim.",
   },
   {
     title: "Governing law",
@@ -61,15 +61,15 @@ export default function TermsPage() {
       <JsonLd
         data={webPageJsonLd({
           path: "/terms",
-          title: "Terms of service · SkillStack",
+          title: "Terms of service · CodeStack",
           description:
-            "Terms governing use of skillstack.com.pk and SkillStack services.",
+            "Terms governing use of codestackintl.com and CodeStack services.",
         })}
       />
       <PageHero
         eyebrow="Legal"
         title="Terms of service"
-        lead="Last updated: 30 July 2026. The rules for using SkillStack and buying our services."
+        lead="Last updated: 30 July 2026. The rules for using CodeStack and buying our services."
         breadcrumbs={[{ label: "Terms" }]}
       />
       <div className="mx-auto max-w-3xl space-y-10 px-6 py-12 md:px-8 md:py-16">

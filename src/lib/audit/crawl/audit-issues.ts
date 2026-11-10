@@ -1,6 +1,6 @@
 /**
  * Site-audit issue registry — adapted from OpenSEO's AUDIT_ISSUE_TYPES
- * (https://github.com/every-app/open-seo) for SkillStack crawl audits.
+ * (https://github.com/every-app/open-seo) for CodeStack crawl audits.
  */
 
 export type IssueSeverity = "critical" | "warning" | "info";

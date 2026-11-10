@@ -50,7 +50,7 @@ export async function GET(request: Request) {
     const refreshToken = tokens.refresh_token || project.gscRefreshToken;
     if (!refreshToken) {
       throw new Error(
-        "Google did not return a refresh token. Please remove SkillStack from your Google Account permissions (myaccount.google.com/connections) and connect again.",
+        "Google did not return a refresh token. Please remove CodeStack from your Google Account permissions (myaccount.google.com/connections) and connect again.",
       );
     }
 

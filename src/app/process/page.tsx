@@ -16,16 +16,16 @@ import {
 export const metadata: Metadata = {
   title: "Process",
   description:
-    "How SkillStack takes projects from keyword research to build, ranking, and monetization.",
+    "How CodeStack takes projects from keyword research to build, ranking, and monetization.",
   alternates: { canonical: absoluteUrl("/process") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/process"),
-    title: "SkillStack Process",
+    title: "CodeStack Process",
     description:
       "Four stages from research to revenue — clear approvals, no black-box SEO.",
   }),
   twitter: pageTwitter({
-    title: "SkillStack Process",
+    title: "CodeStack Process",
     description: "Four stages from research to revenue — clear approvals, no black-box SEO.",
   }),
 };
@@ -37,9 +37,9 @@ export default function ProcessPage() {
         data={[
           webPageJsonLd({
             path: "/process",
-            title: "SkillStack Process",
+            title: "CodeStack Process",
             description:
-              "How SkillStack takes projects from keyword research to build, ranking, and monetization.",
+              "How CodeStack takes projects from keyword research to build, ranking, and monetization.",
           }),
           howToJsonLd(
             processSteps.map((step) => ({
@@ -52,7 +52,7 @@ export default function ProcessPage() {
       <PageHero
         eyebrow="Process"
         title="A straight path from research to revenue."
-        lead="Four stages. Clear approvals. No mystery black-box SEO. Here’s exactly how a SkillStack engagement typically runs."
+        lead="Four stages. Clear approvals. No mystery black-box SEO. Here’s exactly how a CodeStack engagement typically runs."
         breadcrumbs={[{ label: "Process" }]}
       />
       <ProcessDetail />

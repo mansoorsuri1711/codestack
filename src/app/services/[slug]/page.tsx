@@ -31,12 +31,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
 
   const title = service.title;
-  const description = `${service.summary} Available from SkillStack for clients across Pakistan and internationally.`;
+  const description = `${service.summary} Available from CodeStack for clients across Pakistan and internationally.`;
   const url = absoluteUrl(`/services/${service.slug}`);
   const keywords = [
     `${service.title} Pakistan`,
     `${service.shortTitle} SEO service`,
-    "SkillStack SEO services",
+    "CodeStack SEO services",
     "SEO agency Pakistan",
     "international SEO",
   ];
@@ -51,11 +51,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: url },
     openGraph: pageOpenGraph({
       url,
-      title: `${service.title} · SkillStack`,
+      title: `${service.title} · CodeStack`,
       description,
     }),
     twitter: pageTwitter({
-      title: `${service.title} · SkillStack`,
+      title: `${service.title} · CodeStack`,
       description,
     }),
   };
@@ -74,8 +74,8 @@ export default async function ServiceDetailPage({ params }: Props) {
         data={[
           webPageJsonLd({
             path,
-            title: `${service.title} · SkillStack`,
-            description: `${service.summary} From SkillStack for clients across Pakistan and worldwide.`,
+            title: `${service.title} · CodeStack`,
+            description: `${service.summary} From CodeStack for clients across Pakistan and worldwide.`,
           }),
           {
             "@context": "https://schema.org",
@@ -141,7 +141,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="border-t border-line bg-bg-elevated py-10">
           <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 sm:flex-row sm:items-center sm:justify-between md:px-8">
             <p className="max-w-xl text-sm leading-relaxed text-ink-muted sm:text-base">
-              Want to run this yourself in the SkillStack dashboard instead of
+              Want to run this yourself in the CodeStack dashboard instead of
               hiring our team?
             </p>
             <Link
@@ -158,7 +158,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         primary={{ href: "/contact", label: "Talk to us" }}
         secondary={{ href: "/pricing", label: "See packages" }}
       >
-        Ready to run {service.shortTitle.toLowerCase()} with SkillStack?
+        Ready to run {service.shortTitle.toLowerCase()} with CodeStack?
       </PageCTA>
     </PageShell>
   );

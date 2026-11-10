@@ -7,7 +7,7 @@ import ProfileEditor from "@/components/ProfileEditor";
 
 export const metadata: Metadata = {
   title: "Your profile",
-  description: "Edit your SkillStack profile, skills, and public details.",
+  description: "Edit your CodeStack profile, skills, and public details.",
   robots: { index: false, follow: false },
 };
 

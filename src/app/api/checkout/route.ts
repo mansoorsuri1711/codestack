@@ -33,7 +33,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           error:
-            "SkillStack is currently in testing mode — all dashboard features are 100% free to use for now! Stripe checkout will be live soon.",
+            "CodeStack is currently in testing mode — all dashboard features are 100% free to use for now! Stripe checkout will be live soon.",
         },
         { status: 503 },
       );
@@ -65,7 +65,7 @@ export async function POST(request: Request) {
               currency: "usd",
               unit_amount: Math.round(plan.priceUsd * 100),
               product_data: {
-                name: `SkillStack · ${plan.name}`,
+                name: `CodeStack · ${plan.name}`,
                 description: plan.tagline,
                 images: [`${baseUrl}/og-image.jpg`],
               },

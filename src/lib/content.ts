@@ -72,6 +72,6 @@ export const aboutHighlights = [
   },
   {
     title: "Where we work",
-    body: "SkillStack Private Limited is rooted in Pakistan and delivers for national and international clients — from first domain to ranking strategy.",
+    body: "CodeStack Private Limited is rooted in Pakistan and delivers for national and international clients — from first domain to ranking strategy.",
   },
 ];

@@ -48,7 +48,7 @@ export function ProjectDomainBanner({
             className={inputClass}
             value={domain}
             onChange={(e) => setDomain(e.target.value)}
-            placeholder="skillstack.com.pk"
+            placeholder="codestackintl.com"
           />
           <button type="submit" disabled={saving} className={buttonPrimaryClass}>
             {saving ? "Saving..." : "Save domain"}

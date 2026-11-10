@@ -200,7 +200,7 @@ export default function Seo2026Path() {
             href="/services"
             className="text-sm font-medium text-ink-muted hover:text-accent"
           >
-            See how SkillStack covers every step
+            See how CodeStack covers every step
           </Link>
         </motion.div>
       </div>

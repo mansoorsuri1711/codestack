@@ -1,6 +1,6 @@
 import { createFeatureOgImage, OG_CONTENT_TYPE, OG_SIZE } from "@/lib/og";
 
-export const alt = "SkillStack services";
+export const alt = "CodeStack services";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

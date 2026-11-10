@@ -9,19 +9,19 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Forgot Password | Recover SkillStack Account",
+  title: "Forgot Password | Recover CodeStack Account",
   description:
-    "Reset your SkillStack password. Enter your email to receive a secure recovery link.",
+    "Reset your CodeStack password. Enter your email to receive a secure recovery link.",
   robots: { index: false, follow: false },
   alternates: { canonical: absoluteUrl("/forgot-password") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/forgot-password"),
-    title: "Forgot password · SkillStack",
-    description: "Reset your SkillStack password.",
+    title: "Forgot password · CodeStack",
+    description: "Reset your CodeStack password.",
   }),
   twitter: pageTwitter({
-    title: "Forgot password · SkillStack",
-    description: "Reset your SkillStack password.",
+    title: "Forgot password · CodeStack",
+    description: "Reset your CodeStack password.",
   }),
 };
 

@@ -12,7 +12,7 @@ const MESSAGES: Record<string, string> = {
   NoEmail:
     "Google did not share an email address for this account. Use a Google account that has an email, or allow the email permission and try again.",
   Configuration:
-    "Auth is misconfigured. Confirm AUTH_SECRET, AUTH_URL=https://skillstack.com.pk, AUTH_GOOGLE_ID, and AUTH_GOOGLE_SECRET are set on Vercel (Production) and redeploy.",
+    "Auth is misconfigured. Confirm AUTH_SECRET, AUTH_URL=https://codestackintl.com, AUTH_GOOGLE_ID, and AUTH_GOOGLE_SECRET are set on Vercel (Production) and redeploy.",
   Verification:
     "The sign-in link is invalid or expired. Try again.",
   OAuthAccountNotLinked:

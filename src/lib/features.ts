@@ -21,9 +21,9 @@ export const productFeatures: ProductFeature[] = [
     shortTitle: "Keywords",
     group: "Research",
     summary:
-      "Self-serve keyword research in the SkillStack dashboard — volume, difficulty, intent, and SERP context you run yourself.",
+      "Self-serve keyword research in the CodeStack dashboard — volume, difficulty, intent, and SERP context you run yourself.",
     description:
-      "The SkillStack Keyword Research Tool is a product feature, not a done-for-you service. Sign in, enter a seed keyword, review volume and competition signals, inspect SERP context, and save winners to your project. Prefer a team to research and deliver the list for you? Use our keyword research service instead.",
+      "The CodeStack Keyword Research Tool is a product feature, not a done-for-you service. Sign in, enter a seed keyword, review volume and competition signals, inspect SERP context, and save winners to your project. Prefer a team to research and deliver the list for you? Use our keyword research service instead.",
     dashboardHref: "/dashboard/keyword-research-tool",
     relatedServiceSlug: "keyword-research",
     relatedServiceLabel: "Keyword research service",
@@ -31,7 +31,7 @@ export const productFeatures: ProductFeature[] = [
       "Seed-based keyword ideas with volume and competition signals",
       "Intent labels and market-aware research options",
       "SERP snapshot so you see what already ranks",
-      "Save keywords into your SkillStack project",
+      "Save keywords into your CodeStack project",
     ],
     outcomes: [
       "Build topic clusters faster on your own schedule",
@@ -42,7 +42,7 @@ export const productFeatures: ProductFeature[] = [
       "keyword research tool",
       "SEO keyword research software",
       "keyword finder dashboard",
-      "SkillStack keyword research tool",
+      "CodeStack keyword research tool",
     ],
   },
   {
@@ -70,7 +70,7 @@ export const productFeatures: ProductFeature[] = [
       "keyword difficulty checker",
       "KD checker tool",
       "keyword difficulty finder",
-      "SkillStack keyword difficulty",
+      "CodeStack keyword difficulty",
     ],
   },
   {
@@ -99,7 +99,7 @@ export const productFeatures: ProductFeature[] = [
       "domain overview tool",
       "website traffic estimator",
       "domain SEO checker",
-      "SkillStack domain overview tool",
+      "CodeStack domain overview tool",
     ],
   },
   {
@@ -110,7 +110,7 @@ export const productFeatures: ProductFeature[] = [
     summary:
       "Analyze any domain’s link profile in the dashboard — growth, referring domains, and top linked pages.",
     description:
-      "The SkillStack Backlink Checker is a research tool for inspecting link profiles yourself. Review overview metrics, backlink rows, referring domains, and top linked pages to judge authority. Need SkillStack to build high-authority placements for you? That is our backlinking service.",
+      "The CodeStack Backlink Checker is a research tool for inspecting link profiles yourself. Review overview metrics, backlink rows, referring domains, and top linked pages to judge authority. Need CodeStack to build high-authority placements for you? That is our backlinking service.",
     dashboardHref: "/dashboard/backlink-checker",
     relatedServiceSlug: "backlinking",
     relatedServiceLabel: "Backlinking service",
@@ -129,7 +129,7 @@ export const productFeatures: ProductFeature[] = [
       "backlink checker tool",
       "referring domains analyzer",
       "link profile dashboard",
-      "SkillStack backlink checker",
+      "CodeStack backlink checker",
     ],
   },
   {
@@ -155,7 +155,7 @@ export const productFeatures: ProductFeature[] = [
       "prompt research tool",
       "ChatGPT questions research",
       "AI visibility research",
-      "SkillStack prompt research",
+      "CodeStack prompt research",
     ],
   },
   {
@@ -181,7 +181,7 @@ export const productFeatures: ProductFeature[] = [
       "prompt explorer",
       "multi-model AI SEO",
       "ChatGPT Claude Gemini comparison",
-      "SkillStack prompt explorer",
+      "CodeStack prompt explorer",
     ],
   },
   {
@@ -207,7 +207,7 @@ export const productFeatures: ProductFeature[] = [
       "prompt tracking",
       "AI brand mention tracking",
       "ChatGPT citation tracking",
-      "SkillStack prompt tracking",
+      "CodeStack prompt tracking",
     ],
   },
   {
@@ -233,7 +233,7 @@ export const productFeatures: ProductFeature[] = [
     keywords: [
       "organic keyword checker",
       "ranked keywords tool",
-      "SkillStack organic keyword checker",
+      "CodeStack organic keyword checker",
     ],
   },
   {
@@ -259,7 +259,7 @@ export const productFeatures: ProductFeature[] = [
       "organic position checker",
       "organic position tracker",
       "SERP position checker tool",
-      "SkillStack organic positions",
+      "CodeStack organic positions",
     ],
   },
   {
@@ -284,7 +284,7 @@ export const productFeatures: ProductFeature[] = [
     keywords: [
       "top pages finder",
       "best ranking pages tool",
-      "SkillStack top pages finder",
+      "CodeStack top pages finder",
     ],
   },
   {
@@ -309,7 +309,7 @@ export const productFeatures: ProductFeature[] = [
     keywords: [
       "organic competitor finder",
       "SEO competitor finder tool",
-      "SkillStack competitor finder",
+      "CodeStack competitor finder",
     ],
   },
   {
@@ -335,7 +335,7 @@ export const productFeatures: ProductFeature[] = [
       "content gap finder",
       "keyword gap analysis tool",
       "competitive content report",
-      "SkillStack content gap finder",
+      "CodeStack content gap finder",
     ],
   },
   {
@@ -360,7 +360,7 @@ export const productFeatures: ProductFeature[] = [
     keywords: [
       "best by links finder",
       "most linked pages tool",
-      "SkillStack best by links",
+      "CodeStack best by links",
     ],
   },
   {
@@ -385,7 +385,7 @@ export const productFeatures: ProductFeature[] = [
     keywords: [
       "internal link checker",
       "internal linking analysis tool",
-      "SkillStack internal links",
+      "CodeStack internal links",
     ],
   },
   {
@@ -394,7 +394,7 @@ export const productFeatures: ProductFeature[] = [
     shortTitle: "GSC",
     group: "My Site",
     summary:
-      "Connect Google Search Console and review clicks, queries, and performance inside SkillStack.",
+      "Connect Google Search Console and review clicks, queries, and performance inside CodeStack.",
     description:
       "The GSC Insights Tool pulls Search Console data into your dashboard so real clicks and impressions sit next to keyword research and rank tracking — not in a separate tab forever.",
     dashboardHref: "/dashboard/gsc-insights-tool",
@@ -410,7 +410,7 @@ export const productFeatures: ProductFeature[] = [
     keywords: [
       "GSC insights tool",
       "Google Search Console dashboard",
-      "SkillStack GSC insights",
+      "CodeStack GSC insights",
     ],
   },
   {
@@ -435,7 +435,7 @@ export const productFeatures: ProductFeature[] = [
     keywords: [
       "rank tracker tool",
       "keyword position tracker",
-      "SkillStack rank tracker",
+      "CodeStack rank tracker",
     ],
   },
   {
@@ -446,7 +446,7 @@ export const productFeatures: ProductFeature[] = [
     summary:
       "Keep a living list of keywords you want to target, track, or brief to writers.",
     description:
-      "The Saved Keywords Manager stores research wins in one place so keyword research, content planning, and rank tracking stay connected inside SkillStack.",
+      "The Saved Keywords Manager stores research wins in one place so keyword research, content planning, and rank tracking stay connected inside CodeStack.",
     dashboardHref: "/dashboard/saved-keywords-manager",
     highlights: [
       "Save keywords from research",
@@ -460,7 +460,7 @@ export const productFeatures: ProductFeature[] = [
     keywords: [
       "saved keywords manager",
       "SEO keyword list tool",
-      "SkillStack saved keywords",
+      "CodeStack saved keywords",
     ],
   },
   {
@@ -471,7 +471,7 @@ export const productFeatures: ProductFeature[] = [
     summary:
       "Self-serve technical SEO checks in the dashboard — crawl signals, schema, performance, and fix priorities.",
     description:
-      "The SkillStack Site Audit Tool helps you scan for technical issues yourself: crawl directives, structured data, performance signals, and prioritized findings. Want SkillStack to audit and implement fixes as a service? See Technical SEO & site audits.",
+      "The CodeStack Site Audit Tool helps you scan for technical issues yourself: crawl directives, structured data, performance signals, and prioritized findings. Want CodeStack to audit and implement fixes as a service? See Technical SEO & site audits.",
     dashboardHref: "/dashboard/site-audit-tool",
     relatedServiceSlug: "technical-seo",
     relatedServiceLabel: "Technical SEO & site audits",
@@ -488,7 +488,7 @@ export const productFeatures: ProductFeature[] = [
       "SEO site audit tool",
       "technical SEO checker software",
       "website audit dashboard",
-      "SkillStack site audit tool",
+      "CodeStack site audit tool",
     ],
   },
 ];

@@ -2,7 +2,7 @@
 
 Hosted Checkout is wired in [`src/app/api/checkout/route.ts`](src/app/api/checkout/route.ts) to match Checkout Studio (`hosted_web_0001`, `mode: payment`, Stripe catalog Price).
 
-You do **not** need the Studio sample `checkout.html` / `success.html` — SkillStack already uses:
+You do **not** need the Studio sample `checkout.html` / `success.html` — CodeStack already uses:
 
 - Buy CTA → `POST /api/checkout` → redirect to `session.url`
 - Success → [`/pricing/success`](src/app/pricing/success/page.tsx)
@@ -41,7 +41,7 @@ You do **not** need the Studio sample `checkout.html` / `success.html` — Skill
 ### 1. Create the product in Stripe (catalog)
 
 1. Open [Stripe Products](https://dashboard.stripe.com/test/products) (use **Test mode** first).
-2. Create product e.g. **SkillStack Pro Suite** — price **$10 USD**, one-time.
+2. Create product e.g. **CodeStack Pro Suite** — price **$10 USD**, one-time.
 3. Copy the **Price ID** (`price_...`).
 
 ### 2. Env vars — local `.env.local` and Vercel
@@ -52,7 +52,7 @@ You do **not** need the Studio sample `checkout.html` / `success.html` — Skill
 | `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | `pk_test_...` |
 | `STRIPE_PRICE_ID` | `price_...` from step 1 |
 | `STRIPE_WEBHOOK_SECRET` | `whsec_...` from step 3 |
-| `AUTH_URL` | `https://skillstack.com.pk` (or your Vercel URL) |
+| `AUTH_URL` | `https://codestackintl.com` (or your Vercel URL) |
 
 Never commit secret keys. Never put `sk_...` in frontend code.
 

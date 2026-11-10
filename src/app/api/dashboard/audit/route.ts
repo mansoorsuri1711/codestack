@@ -89,7 +89,7 @@ export async function POST(request: Request) {
     });
 
     try {
-      const report = await runFullSiteAudit(auditUrl, "SkillStack");
+      const report = await runFullSiteAudit(auditUrl, "CodeStack");
 
       audit.status = "completed";
       audit.score = report.performance.mobile.performance;

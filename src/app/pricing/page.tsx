@@ -16,17 +16,17 @@ import {
 export const metadata: Metadata = {
   title: "Pricing | All-in-One SEO Dashboard Suite",
   description:
-    "SkillStack Pro: Complete access to the full SEO dashboard, keyword research, live backlinks tracking, site audits, rank tracking, and AI search tools for $10 USD.",
+    "CodeStack Pro: Complete access to the full SEO dashboard, keyword research, live backlinks tracking, site audits, rank tracking, and AI search tools for $10 USD.",
   alternates: { canonical: absoluteUrl("/pricing") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/pricing"),
-    title: "SkillStack Pricing — All-in-One SEO Suite",
+    title: "CodeStack Pricing — All-in-One SEO Suite",
     description:
-      "Unlock the entire SkillStack SEO Dashboard, Keyword Research, Backlinks, Rank Tracking & AI tools for $10 USD.",
+      "Unlock the entire CodeStack SEO Dashboard, Keyword Research, Backlinks, Rank Tracking & AI tools for $10 USD.",
   }),
   twitter: pageTwitter({
-    title: "SkillStack Pricing — All-in-One SEO Suite",
-    description: "Unlock the entire SkillStack SEO Dashboard, Keyword Research, Backlinks, Rank Tracking & AI tools for $10 USD.",
+    title: "CodeStack Pricing — All-in-One SEO Suite",
+    description: "Unlock the entire CodeStack SEO Dashboard, Keyword Research, Backlinks, Rank Tracking & AI tools for $10 USD.",
   }),
 };
 
@@ -39,14 +39,14 @@ export default function PricingPage() {
         data={[
           webPageJsonLd({
             path: "/pricing",
-            title: "SkillStack Pricing",
+            title: "CodeStack Pricing",
             description:
               "All-in-one SEO dashboard package: keyword research, live backlinks, rank tracking, site audit, and AI search tools for $10 USD.",
           }),
           {
             "@context": "https://schema.org",
             "@type": "OfferCatalog",
-            name: "SkillStack Packages",
+            name: "CodeStack Packages",
             itemListElement: [
               {
                 "@type": "Offer",

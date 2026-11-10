@@ -19,25 +19,25 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Contact | SkillStack Pakistan",
+  title: "Contact | CodeStack Pakistan",
   description:
-    "Contact SkillStack in Gilgit-Baltistan for SEO, keyword research, content writing, blogging, backlinks, and websites — serving Gilgit-Baltistan, Pakistan, and international clients.",
+    "Contact CodeStack in Gilgit-Baltistan for SEO, keyword research, content writing, blogging, backlinks, and websites — serving Gilgit-Baltistan, Pakistan, and international clients.",
   keywords: [
     "contact SEO company Gilgit-Baltistan",
-    "SkillStack Gilgit-Baltistan",
+    "CodeStack Gilgit-Baltistan",
     "international SEO contact",
     "SEO services Pakistan contact",
   ],
   alternates: { canonical: absoluteUrl("/contact") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/contact"),
-    title: "Contact SkillStack",
+    title: "Contact CodeStack",
     description:
-      "Tell us your niche and goals — hello@skillstack.com.pk · Gilgit-Baltistan, Pakistan.",
+      "Tell us your niche and goals — hello@codestackintl.com · Gilgit-Baltistan, Pakistan.",
   }),
   twitter: pageTwitter({
-    title: "Contact SkillStack",
-    description: "Tell us your niche and goals — hello@skillstack.com.pk · Gilgit-Baltistan, Pakistan.",
+    title: "Contact CodeStack",
+    description: "Tell us your niche and goals — hello@codestackintl.com · Gilgit-Baltistan, Pakistan.",
   }),
 };
 
@@ -52,7 +52,7 @@ const details: {
 }[] = [
   {
     label: "Company",
-    value: "SkillStack Private Limited",
+    value: "CodeStack Private Limited",
   },
   {
     label: "Email",
@@ -81,14 +81,14 @@ const details: {
   },
   {
     label: "LinkedIn",
-    value: "Skill Stack on LinkedIn",
+    value: "Code Stack on LinkedIn",
     href: LINKEDIN_URL,
     hint: "Follow the company page",
     external: true,
   },
   {
     label: "X",
-    value: "@SkillStack_co",
+    value: "@CodeStack_co",
     href: X_URL,
     hint: "Follow on X",
     external: true,
@@ -109,9 +109,9 @@ export default function ContactPage() {
       <JsonLd
         data={webPageJsonLd({
           path: "/contact",
-          title: "Contact SkillStack",
+          title: "Contact CodeStack",
           description:
-            "Contact SkillStack Private Limited for websites, SEO, keywords, and backlinking projects.",
+            "Contact CodeStack Private Limited for websites, SEO, keywords, and backlinking projects.",
           type: "ContactPage",
         })}
       />
@@ -196,7 +196,7 @@ export default function ContactPage() {
                     Office map
                   </p>
                   <p className="mt-1 text-sm text-ink-muted">
-                    SkillStack · {OFFICE.label}
+                    CodeStack · {OFFICE.label}
                   </p>
                 </div>
                 <a
@@ -210,7 +210,7 @@ export default function ContactPage() {
               </div>
               <div className="relative aspect-[16/10] w-full min-h-[240px] sm:aspect-[21/9] sm:min-h-[320px]">
                 <iframe
-                  title="SkillStack office location on Google Maps"
+                  title="CodeStack office location on Google Maps"
                   src={OFFICE_EMBED_SRC}
                   className="absolute inset-0 h-full w-full border-0 grayscale-[20%] contrast-[1.05]"
                   loading="lazy"

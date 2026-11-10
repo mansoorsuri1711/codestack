@@ -14,8 +14,8 @@ export type Plan = {
 export const plans: Plan[] = [
   {
     id: "pro",
-    name: "SkillStack Pro Suite",
-    topic: "SkillStack Pro",
+    name: "CodeStack Pro Suite",
+    topic: "CodeStack Pro",
     tagline:
       "All-in-one SEO command center — complete dashboard tools, AI research, and automated tracking.",
     priceUsd: 10,

@@ -25,7 +25,7 @@ const UserSchema = new Schema(
 
     /**
      * First-touch acquisition tag from UTM — e.g. "instagram" when the visitor
-     * arrived via skillstack.com.pk/?utm_source=instagram&utm_medium=bio
+     * arrived via codestackintl.com/?utm_source=instagram&utm_medium=bio
      */
     signupSource: {
       type: String,

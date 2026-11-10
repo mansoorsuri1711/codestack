@@ -67,98 +67,98 @@ export const imageSitemapEntries: ImageSitemapEntry[] = [
     pagePath: "",
     images: [
       {
-        loc: `${SITE_URL}/brand/skill-stack.webp`,
-        title: "SkillStack logo",
+        loc: `${SITE_URL}/brand/code-stack.webp`,
+        title: "CodeStack logo",
       },
       {
-        loc: `${SITE_URL}/brand/skill-stack-icon-512.webp`,
-        title: "SkillStack app icon",
+        loc: `${SITE_URL}/brand/code-stack-icon-512.webp`,
+        title: "CodeStack app icon",
       },
       {
         loc: `${SITE_URL}/og-image.jpg`,
-        title: "SkillStack Open Graph image",
+        title: "CodeStack Open Graph image",
       },
       {
         loc: `${SITE_URL}/og-image-square.jpg`,
-        title: "SkillStack square social image",
+        title: "CodeStack square social image",
       },
       {
         loc: `${SITE_URL}/twitter-card.jpg`,
-        title: "SkillStack Twitter / X card",
+        title: "CodeStack Twitter / X card",
       },
       {
         loc: `${SITE_URL}/apple-icon.png`,
-        title: "SkillStack apple touch icon",
+        title: "CodeStack apple touch icon",
       },
     ],
   },
   {
     pagePath: "/about",
     images: [
-      pageFeatureImage("/about", "About SkillStack"),
+      pageFeatureImage("/about", "About CodeStack"),
       {
         loc: `${SITE_URL}/mansoor-khan.webp`,
-        title: "Mansoor Khan — CEO of SkillStack",
+        title: "Mansoor Khan — CEO of CodeStack",
       },
     ],
   },
   {
     pagePath: "/services",
-    images: [pageFeatureImage("/services", "SkillStack services")],
+    images: [pageFeatureImage("/services", "CodeStack services")],
   },
   ...services.map((service) => ({
     pagePath: `/services/${service.slug}`,
     images: [
       pageFeatureImage(
         `/services/${service.slug}`,
-        `SkillStack — ${service.title}`,
+        `CodeStack — ${service.title}`,
       ),
     ],
   })),
   {
     pagePath: "/features",
-    images: [pageFeatureImage("/features", "SkillStack features")],
+    images: [pageFeatureImage("/features", "CodeStack features")],
   },
   ...productFeatures.map((feature) => ({
     pagePath: `/features/${feature.slug}`,
     images: [
       pageFeatureImage(
         `/features/${feature.slug}`,
-        `SkillStack — ${feature.title}`,
+        `CodeStack — ${feature.title}`,
       ),
     ],
   })),
   {
     pagePath: "/pricing",
-    images: [pageFeatureImage("/pricing", "SkillStack pricing")],
+    images: [pageFeatureImage("/pricing", "CodeStack pricing")],
   },
   {
     pagePath: "/process",
-    images: [pageFeatureImage("/process", "SkillStack process")],
+    images: [pageFeatureImage("/process", "CodeStack process")],
   },
   {
     pagePath: "/seo-company-gilgit-baltistan",
     images: [
       pageFeatureImage(
         "/seo-company-gilgit-baltistan",
-        "Best SEO Company in Gilgit-Baltistan — SkillStack",
+        "Best SEO Company in Gilgit-Baltistan — CodeStack",
       ),
     ],
   },
   {
     pagePath: "/seo-2026",
-    images: [pageFeatureImage("/seo-2026", "SEO in 2026 — SkillStack")],
+    images: [pageFeatureImage("/seo-2026", "SEO in 2026 — CodeStack")],
   },
   {
     pagePath: "/contact",
-    images: [pageFeatureImage("/contact", "Contact SkillStack")],
+    images: [pageFeatureImage("/contact", "Contact CodeStack")],
   },
   {
     pagePath: "/login",
     images: [
       {
-        loc: `${SITE_URL}/brand/skill-stack.webp`,
-        title: "SkillStack login",
+        loc: `${SITE_URL}/brand/code-stack.webp`,
+        title: "CodeStack login",
       },
     ],
   },
@@ -166,8 +166,8 @@ export const imageSitemapEntries: ImageSitemapEntry[] = [
     pagePath: "/register",
     images: [
       {
-        loc: `${SITE_URL}/brand/skill-stack.webp`,
-        title: "SkillStack register",
+        loc: `${SITE_URL}/brand/code-stack.webp`,
+        title: "CodeStack register",
       },
     ],
   },
@@ -175,8 +175,8 @@ export const imageSitemapEntries: ImageSitemapEntry[] = [
     pagePath: "/privacy",
     images: [
       {
-        loc: `${SITE_URL}/brand/skill-stack.webp`,
-        title: "SkillStack privacy policy",
+        loc: `${SITE_URL}/brand/code-stack.webp`,
+        title: "CodeStack privacy policy",
       },
     ],
   },
@@ -184,8 +184,8 @@ export const imageSitemapEntries: ImageSitemapEntry[] = [
     pagePath: "/terms",
     images: [
       {
-        loc: `${SITE_URL}/brand/skill-stack.webp`,
-        title: "SkillStack terms of service",
+        loc: `${SITE_URL}/brand/code-stack.webp`,
+        title: "CodeStack terms of service",
       },
     ],
   },

@@ -77,7 +77,7 @@ function VerifyContent() {
         href="/"
         className="font-display text-sm font-semibold text-accent hover:underline"
       >
-        ← SkillStack
+        ← CodeStack
       </Link>
       <h1 className="font-display mt-6 text-3xl font-bold tracking-tight text-snow">
         Email verification

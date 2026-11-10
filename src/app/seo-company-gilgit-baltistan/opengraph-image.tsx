@@ -1,6 +1,6 @@
 import { createFeatureOgImage, OG_CONTENT_TYPE, OG_SIZE } from "@/lib/og";
 
-export const alt = "Best SEO company Gilgit-Baltistan — SkillStack";
+export const alt = "Best SEO company Gilgit-Baltistan — CodeStack";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

@@ -42,11 +42,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: url },
     openGraph: pageOpenGraph({
       url,
-      title: `${feature.title} · SkillStack`,
+      title: `${feature.title} · CodeStack`,
       description,
     }),
     twitter: pageTwitter({
-      title: `${feature.title} · SkillStack`,
+      title: `${feature.title} · CodeStack`,
       description,
     }),
   };
@@ -78,7 +78,7 @@ export default async function FeatureDetailPage({ params }: Props) {
         data={[
           webPageJsonLd({
             path,
-            title: `${feature.title} · SkillStack`,
+            title: `${feature.title} · CodeStack`,
             description: feature.summary,
           }),
           {
@@ -184,7 +184,7 @@ export default async function FeatureDetailPage({ params }: Props) {
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-ink-muted">
                 This page explains the self-serve tool. Live data and project
-                saves live in your SkillStack dashboard after you sign in.
+                saves live in your CodeStack dashboard after you sign in.
               </p>
               <div className="mt-6 flex flex-col gap-3">
                 <Link
@@ -208,7 +208,7 @@ export default async function FeatureDetailPage({ params }: Props) {
                   Or hire us
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-ink-muted">
-                  Prefer SkillStack to do the work and deliver results for you?
+                  Prefer CodeStack to do the work and deliver results for you?
                 </p>
                 <Link
                   href={`/services/${feature.relatedServiceSlug}`}

@@ -1,0 +1,177 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>CodeStack Fiverr Delivery</title>
+<style>body{font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:800px;margin:40px auto;padding:0 24px;line-height:1.5;color:#111}
+h1{font-size:28px}h2{font-size:20px;margin-top:28px;border-bottom:1px solid #ddd;padding-bottom:6px}
+table{margin:12px 0}td{vertical-align:top}li{margin-left:1.2em}</style></head><body>
+<h1>CodeStack — Work Delivery Report</h1>
+
+<p><strong>Project:</strong> CodeStack SEO Dashboard &amp; Website  </p>
+<p><strong>Client delivery document</strong>  </p>
+<p><strong>Date:</strong> 26 September 2026  </p>
+<p><strong>Platform:</strong> codestackintl.com  </p>
+
+<hr/>
+
+<h2>1. Summary</h2>
+
+<p>This delivery improves CodeStack’s SEO dashboard performance and Domain Overview (closer to an Ahrefs-style view), fixes domain search UX, and restores LinkedIn link preview (feature image) when sharing the website.</p>
+
+<hr/>
+
+<h2>2. What Was Delivered</h2>
+
+<h3>A. Faster Domain Overview &amp; Dashboard Features</h3>
+
+<p><strong>Problem:</strong> Domain Overview and related tools (organic search, backlinks, keyword research) felt slow — often waiting a long time for results.</p>
+
+<p><strong>Solution:</strong></p>
+<li>Removed the slow OnPage health crawl from Domain Overview first load</li>
+<li>Added short-term server caching (≈10 minutes) for Domain Overview, Organic, Backlinks, and Keyword Research</li>
+<li>Reduced heavy API payloads (smaller GSC and table limits)</li>
+<li>Auto-load results when a project domain is ready (no extra click for first view)</li>
+<li>Cached results load near-instantly on repeat visits</li>
+
+<p><strong>Result:</strong> First load still needs live SEO data (a few seconds). Reloads and revisits are much faster.</p>
+
+<hr/>
+
+<h3>B. Ahrefs-Style Domain Overview (Traffic + Keywords)</h3>
+
+<p><strong>Problem:</strong> Organic traffic and keyword counts showed as empty (“—”). The panel did not clearly show which keywords drive traffic (unlike Ahrefs).</p>
+
+<p><strong>Root cause:</strong> Domain Rank Overview metrics were read from the wrong place in the DataForSEO response, so traffic/keyword values never populated.</p>
+
+<p><strong>Solution:</strong></p>
+<li>Fixed DataForSEO Labs parsing so **organic traffic**, **keyword counts**, and **traffic value ($)** display correctly</li>
+<li>Redesigned overview into:</li>
+<p>  - <strong>Backlink profile</strong> — Domain Rating, Backlinks, Referring domains  </p>
+<p>  - <strong>Search</strong> — Organic keywords (with Top 3), Organic traffic + Value  </p>
+<p>  - <strong>Top keywords by traffic</strong> — keyword, estimated traffic, volume, rank, page  </p>
+<li>Country breakdown with **flags** + keyword count + traffic  </li>
+<li>If the selected country has little data, fall back to the strongest market (e.g. US) and show a market badge  </li>
+<li>Label estimates as **DataForSEO ETV** (not identical to Ahrefs)</li>
+
+<p><strong>Note on numbers vs Ahrefs:</strong> Ahrefs and DataForSEO use different databases and CTR models. Figures will not match 1:1. Synonym deduplication (`ignore_synonyms`) was enabled to reduce inflated traffic estimates.</p>
+
+<hr/>
+
+<h3>C. Domain Field Fix (Edit / Search Another Domain)</h3>
+
+<p><strong>Problem:</strong> Typing a new domain in Domain Overview did not work — the field kept resetting to the project domain, and input was locked while loading.</p>
+
+<p><strong>Solution:</strong></p>
+<li>Stopped auto-load effects from overwriting the input on every keystroke  </li>
+<li>Domain field stays editable during search  </li>
+<li>Same pattern applied to Organic Search and Backlinks  </li>
+
+<p><strong>How to use:</strong> Type any domain → click <strong>Search</strong>.</p>
+
+<hr/>
+
+<h3>D. UI Cleanup</h3>
+
+<li>Removed the `*.domain/*` wildcard scope chip from Domain Overview  </li>
+<li>Show a clean hostname under the site title instead  </li>
+<li>Keywords by country: flag + country code + keywords + traffic  </li>
+
+<hr/>
+
+<h3>E. LinkedIn Feature Image (Link Preview)</h3>
+
+<p><strong>Problem:</strong> Pasting `https://codestackintl.com/` on LinkedIn did not show the feature / Open Graph image.</p>
+
+<p><strong>Cause:</strong> Social tags pointed at <strong>WebP</strong> images. LinkedIn often ignores WebP for link previews.</p>
+
+<p><strong>Solution:</strong></p>
+<li>Added JPEG feature images (`og-image.jpg`, `twitter-card.jpg`, etc.)  </li>
+<li>Pointed Open Graph / Twitter meta tags to absolute JPEG URLs  </li>
+<li>Use a **single landscape** `og:image` (1200×630) — LinkedIn can fail when a square second image is present  </li>
+<li>Allow LinkedInBot in `robots` and skip Auth cookies for social crawlers  </li>
+
+<p><strong>Client action required (one time after deploy):</strong></p>
+<p>1. Open [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)  </p>
+<p>2. Paste: `https://codestackintl.com/`  </p>
+<p>3. Click <strong>Inspect</strong> (repeat once if needed)  </p>
+<p>4. Create a <strong>new</strong> LinkedIn post with the URL  </p>
+
+<p>Old drafts keep the old blank preview until cache is refreshed.</p>
+
+<hr/>
+
+<h2>3. Technical Stack (Reference)</h2>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%">
+<tr><td>Area</td><td>Technology</td></tr>
+<tr><td>App</td><td>Next.js (App Router)</td></tr>
+<tr><td>SEO data</td><td>DataForSEO Labs / Backlinks APIs</td></tr>
+<tr><td>Auth</td><td>Auth.js (NextAuth)</td></tr>
+<tr><td>Hosting</td><td>Vercel</td></tr>
+<tr><td>Social images</td><td>Static JPEG Open Graph assets</td></tr>
+</table>
+
+<hr/>
+
+<h2>4. How to Verify (Checklist)</h2>
+
+<p>☐ **Domain Overview** opens and loads metrics without a long blank wait  </p>
+<p>☐ **Organic traffic** and **organic keywords** show numbers (not only “—”)  </p>
+<p>☐ **Top keywords by traffic** table lists keywords with traffic / rank / page  </p>
+<p>☐ **Keywords by country** shows flags and traffic  </p>
+<p>☐ You can **type another domain** and Search successfully  </p>
+<p>☐ Soft reload of the same domain feels fast (cache)  </p>
+<p>☐ After Post Inspector: LinkedIn preview shows CodeStack feature image  </p>
+
+<hr/>
+
+<h2>5. Commits Pushed (Main Branch)</h2>
+
+<p>Key production commits related to this work include:</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%">
+<tr><td>Commit</td><td>Description</td></tr>
+<tr><td>`4ab74eb`</td><td>Speed up Labs features + Ahrefs-style traffic overview</td></tr>
+<tr><td>`208cd73`</td><td>Fix domain input resetting while typing</td></tr>
+<tr><td>`36a1ed9`</td><td>Synonym dedupe for less inflated traffic estimates</td></tr>
+<tr><td>`0dae7ca`</td><td>Country flags + remove wildcard scope labels</td></tr>
+<tr><td>`1b2f8f8`</td><td>LinkedIn-safe JPEG feature images</td></tr>
+<tr><td>`e21a26f`</td><td>LinkedIn scrape hardening (single OG image, crawler path)</td></tr>
+</table>
+
+<p>Repository: production `main` on codestackintl.com (Vercel).</p>
+
+<hr/>
+
+<h2>6. Known Limitations (Transparent)</h2>
+
+<p>1. <strong>Traffic ≠ Ahrefs exact numbers</strong> — DataForSEO ETV vs Ahrefs Organic Traffic use different models.  </p>
+<p>2. <strong>GSC “Total visitors”</strong> needs Google Search Console connected for real click data.  </p>
+<p>3. <strong>Health Score</strong> on overview may stay empty by design (skipped for speed; site audit tools can cover crawl health separately).  </p>
+<p>4. <strong>LinkedIn cache</strong> — must use Post Inspector after image/meta changes.  </p>
+
+<hr/>
+
+<h2>7. Deliverables Included</h2>
+
+<p>1. Faster Domain Overview / Organic / Backlinks / Keyword Research paths  </p>
+<p>2. Working organic traffic + top traffic keywords UI  </p>
+<p>3. Domain search UX fixed  </p>
+<p>4. Country flags + traffic correspondence  </p>
+<p>5. LinkedIn-compatible feature image (JPEG + meta)  </p>
+<p>6. Code pushed to production branch  </p>
+
+<hr/>
+
+<h2>8. Support Notes for the Buyer</h2>
+
+<p>If LinkedIn still shows no image after deploy:</p>
+
+<p>1. Confirm deploy finished on Vercel  </p>
+<p>2. Open `https://codestackintl.com/og-image.jpg` in a browser — you should see the CodeStack banner  </p>
+<p>3. Run LinkedIn Post Inspector again on `https://codestackintl.com/`  </p>
+<p>4. Share in a <strong>new</strong> post (not an old draft)  </p>
+
+<hr/>
+
+<p><strong>Prepared for Fiverr delivery</strong>  </p>
+<p>CodeStack — Web Development &amp; SEO Dashboard improvements  </p>
+<p>*End of document*</p>
+</body></html>

@@ -16,11 +16,11 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Features · SkillStack SEO Dashboard",
+  title: "Features · CodeStack SEO Dashboard",
   description:
-    "Explore SkillStack SEO tools — keyword research, domain overview, backlinks, organic competitors, content gap, GSC insights, rank tracking, and site audit.",
+    "Explore CodeStack SEO tools — keyword research, domain overview, backlinks, organic competitors, content gap, GSC insights, rank tracking, and site audit.",
   keywords: [
-    "SkillStack features",
+    "CodeStack features",
     "SEO dashboard tools",
     "keyword research tool",
     "domain overview",
@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   alternates: { canonical: absoluteUrl("/features") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/features"),
-    title: "SkillStack Features — SEO Dashboard Tools",
+    title: "CodeStack Features — SEO Dashboard Tools",
     description:
       "Keyword research, domain overview, backlinks, organic search, competitive analysis, and site tools in one dashboard.",
   }),
   twitter: pageTwitter({
-    title: "SkillStack Features — SEO Dashboard Tools",
+    title: "CodeStack Features — SEO Dashboard Tools",
     description:
       "Keyword research, domain overview, backlinks, organic search, competitive analysis, and site tools in one dashboard.",
   }),
@@ -54,15 +54,15 @@ export default async function FeaturesPage() {
         data={[
           webPageJsonLd({
             path: "/features",
-            title: "SkillStack Features — SEO Dashboard Tools",
+            title: "CodeStack Features — SEO Dashboard Tools",
             description:
-              "Explore SkillStack SEO tools including keyword research, domain overview, backlinks, organic competitors, and site audit.",
+              "Explore CodeStack SEO tools including keyword research, domain overview, backlinks, organic competitors, and site audit.",
             type: "CollectionPage",
           }),
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: "SkillStack SEO dashboard features",
+            name: "CodeStack SEO dashboard features",
             itemListElement: productFeatures.map((feature, i) => ({
               "@type": "ListItem",
               position: i + 1,
@@ -86,7 +86,7 @@ export default async function FeaturesPage() {
       />
       <PageHero
         eyebrow="Features"
-        title="SEO tools built into the SkillStack dashboard."
+        title="SEO tools built into the CodeStack dashboard."
         lead="Keyword research, domain overview, backlinks, organic search, competitive gaps, GSC, and site audit — marketing pages you can index, with live tools waiting in the dashboard."
         breadcrumbs={[{ label: "Features" }]}
       >
@@ -110,7 +110,7 @@ export default async function FeaturesPage() {
 
       <PageCTA
         primary={{ href: primaryHref, label: ctaLabel }}
-        secondary={{ href: "/pricing", label: "SkillStack Pro" }}
+        secondary={{ href: "/pricing", label: "CodeStack Pro" }}
       >
         Ready to run these tools on your own projects?
       </PageCTA>

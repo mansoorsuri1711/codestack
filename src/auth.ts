@@ -199,7 +199,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           }
 
           dbUser = await User.create({
-            name: user.name?.trim() || "SkillStack user",
+            name: user.name?.trim() || "CodeStack user",
             email,
             password: undefined,
             emailVerified: new Date(),

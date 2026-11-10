@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Services | SEO, Keywords, Content & Backlinks Worldwide",
   description:
-    "Keyword research, Google ranking, SEO blogging, content writing, backlinks, and websites from SkillStack — Gilgit-Baltistan-based, serving Pakistan and international clients.",
+    "Keyword research, Google ranking, SEO blogging, content writing, backlinks, and websites from CodeStack — Gilgit-Baltistan-based, serving Pakistan and international clients.",
   keywords: [
     "SEO services Gilgit-Baltistan",
     "keyword research Pakistan",
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   alternates: { canonical: absoluteUrl("/services") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/services"),
-    title: "SkillStack Services — SEO & Ranking Worldwide",
+    title: "CodeStack Services — SEO & Ranking Worldwide",
     description:
       "Research, ranking content, build, authority, and ads — for Gilgit-Baltistan, Pakistan, and worldwide.",
   }),
   twitter: pageTwitter({
-    title: "SkillStack Services — SEO & Ranking Worldwide",
+    title: "CodeStack Services — SEO & Ranking Worldwide",
     description: "Research, ranking content, build, authority, and ads — for Gilgit-Baltistan, Pakistan, and worldwide.",
   }),
 };
@@ -46,15 +46,15 @@ export default function ServicesPage() {
         data={[
           webPageJsonLd({
             path: "/services",
-            title: "SkillStack Services — SEO, Keywords, Content & Backlinks",
+            title: "CodeStack Services — SEO, Keywords, Content & Backlinks",
             description:
-              "Keyword research, Google ranking, content writing, blogging, backlinks, and websites from SkillStack for Pakistan and international clients.",
+              "Keyword research, Google ranking, content writing, blogging, backlinks, and websites from CodeStack for Pakistan and international clients.",
             type: "CollectionPage",
           }),
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            name: "SkillStack services",
+            name: "CodeStack services",
             itemListElement: services.map((service, i) => ({
               "@type": "ListItem",
               position: i + 1,
@@ -79,7 +79,7 @@ export default function ServicesPage() {
       />
       <PageHero
         eyebrow="Services"
-        title="SEO, content, and ranking services from SkillStack."
+        title="SEO, content, and ranking services from CodeStack."
         lead="One team for keyword research, Google ranking, content writing, blogging, backlinks, and websites — based in Gilgit-Baltistan, serving Pakistan and worldwide."
         breadcrumbs={[{ label: "Services" }]}
       >

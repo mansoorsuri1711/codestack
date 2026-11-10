@@ -12,7 +12,7 @@ type LogoProps = {
   priority?: boolean;
 };
 
-const MARK_SRC = "/brand/skill-stack.webp";
+const MARK_SRC = "/brand/code-stack.webp";
 
 export default function Logo({
   href = "/",
@@ -51,7 +51,7 @@ export default function Logo({
         <span
           className={`font-display font-bold tracking-tight text-snow ${textSize}`}
         >
-          SkillStack
+          CodeStack
           <span
             className="ml-[0.12em] inline-block translate-y-[0.1em] align-baseline text-[0.38em] leading-none text-brand"
             aria-hidden
@@ -73,7 +73,7 @@ export default function Logo({
       className={`items-center transition-opacity hover:opacity-90 ${
         className.includes("hidden") ? "" : "inline-flex"
       } ${className}`}
-      aria-label="SkillStack home"
+      aria-label="CodeStack home"
     >
       {inner}
     </Link>

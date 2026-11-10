@@ -1,6 +1,6 @@
 export type FlashKind = "signedIn" | "signedOut";
 
-const STORAGE_KEY = "skillstack:flash";
+const STORAGE_KEY = "codestack:flash";
 
 const MESSAGES: Record<FlashKind, string> = {
   signedIn: "You're signed in.",

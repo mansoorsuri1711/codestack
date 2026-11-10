@@ -347,7 +347,7 @@ export default function SiteAuditPage() {
       button: loading ? "Diagnosing…" : "Run AI diagnosis",
       loading:
         "Running AI diagnosis — schema, robots.txt, security, SERP, and GSC signals…",
-      hint: "Full SkillStack AI diagnosis: root causes, AEO/GEO schema, robots.txt, GSC, and a 30-day recovery plan.",
+      hint: "Full CodeStack AI diagnosis: root causes, AEO/GEO schema, robots.txt, GSC, and a 30-day recovery plan.",
       emptyTitle: "Run AI site diagnosis",
       emptyDesc:
         "Deep technical SEO, AEO/GEO schemas, Core Web Vitals signals, and why the site is not ranking.",
@@ -356,7 +356,7 @@ export default function SiteAuditPage() {
       button: loading ? "Auditing…" : "Run technical audit",
       loading:
         "Auditing security headers, on-page SEO, backlinks, and Lighthouse mobile & desktop…",
-      hint: "Classic SkillStack technical report: security headers, DataForSEO on-page, backlinks, Lighthouse, crawl probes, and PDF export.",
+      hint: "Classic CodeStack technical report: security headers, DataForSEO on-page, backlinks, Lighthouse, crawl probes, and PDF export.",
       emptyTitle: "Run technical site audit",
       emptyDesc:
         "Security headers, on-page H1 checks, backlink profile, Lighthouse scores, and a prioritized action plan.",
@@ -366,7 +366,7 @@ export default function SiteAuditPage() {
   return (
     <DashboardShell
       title="Site Audit"
-      description="OpenSEO-style crawl issues plus SkillStack AI diagnosis and the classic technical report — all in one place."
+      description="OpenSEO-style crawl issues plus CodeStack AI diagnosis and the classic technical report — all in one place."
     >
       <PageStack>
         <DataForSeoBanner configured={dataForSeoConfigured} />

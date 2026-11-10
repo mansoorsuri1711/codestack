@@ -802,7 +802,7 @@ export default function ChatPage() {
                   <Terminal className="h-5 w-5" />
                 </div>
                 <h2 className="font-display text-base md:text-lg font-medium text-snow leading-relaxed">
-                  Hey, I&apos;m Suri — your in-app SEO agent for SkillStack. I can research keywords, size up competitors, read your SERPs, backlinks, rank tracking, and Search Console, and turn it into next steps for this project.
+                  Hey, I&apos;m Suri — your in-app SEO agent for CodeStack. I can research keywords, size up competitors, read your SERPs, backlinks, rank tracking, and Search Console, and turn it into next steps for this project.
                 </h2>
                 <p className="text-xs text-ink-muted">
                   Ask me anything, attach ZIP files, images, or documents for analysis, or start with one of these:

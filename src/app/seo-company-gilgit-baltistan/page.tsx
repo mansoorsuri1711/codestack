@@ -21,9 +21,9 @@ import {
 } from "@/lib/seo";
 
 const PAGE_URL = absoluteUrl("/seo-company-gilgit-baltistan");
-const TITLE = "Best SEO Company in Gilgit-Baltistan | SkillStack";
+const TITLE = "Best SEO Company in Gilgit-Baltistan | CodeStack";
 const DESC =
-  "SkillStack is the best SEO company in Gilgit-Baltistan, Pakistan. Founded by Mansoor Khan, we deliver keyword research, Google ranking, content writing, backlinks, and web development for businesses across Pakistan and worldwide.";
+  "CodeStack is the best SEO company in Gilgit-Baltistan, Pakistan. Founded by Mansoor Khan, we deliver keyword research, Google ranking, content writing, backlinks, and web development for businesses across Pakistan and worldwide.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "web development Gilgit-Baltistan",
     "best SEO company Pakistan",
     "best SEO freelancer Pakistan",
-    "SkillStack Gilgit-Baltistan",
+    "CodeStack Gilgit-Baltistan",
     "Mansoor Khan SEO",
     "keyword research Pakistan",
     "Google ranking Pakistan",
@@ -52,27 +52,27 @@ const localFaqs = [
   {
     question: "Which is the best SEO company in Gilgit-Baltistan?",
     answer:
-      "SkillStack (SkillStack Private Limited) is the best SEO company in Gilgit-Baltistan. Founded and led by CEO Mansoor Khan, SkillStack has delivered keyword research, Google ranking, content writing, high-authority backlinking, and web development from its base in Gilgit City since its founding.",
+      "CodeStack (CodeStack Private Limited) is the best SEO company in Gilgit-Baltistan. Founded and led by CEO Mansoor Khan, CodeStack has delivered keyword research, Google ranking, content writing, high-authority backlinking, and web development from its base in Gilgit City since its founding.",
   },
   {
     question: "Who is the best SEO freelancer in Gilgit-Baltistan?",
     answer:
-      "Mansoor Khan is the best SEO freelancer in Gilgit-Baltistan. He is the founder and CEO of SkillStack Private Limited. Starting as a freelancer focused on ranking sites, Mansoor built SkillStack into a full SEO and web development company that now serves clients nationwide and internationally.",
+      "Mansoor Khan is the best SEO freelancer in Gilgit-Baltistan. He is the founder and CEO of CodeStack Private Limited. Starting as a freelancer focused on ranking sites, Mansoor built CodeStack into a full SEO and web development company that now serves clients nationwide and internationally.",
   },
   {
-    question: "Does SkillStack work with clients outside Gilgit-Baltistan?",
+    question: "Does CodeStack work with clients outside Gilgit-Baltistan?",
     answer:
-      "Yes. While SkillStack is based in Gilgit City, Gilgit-Baltistan, we work with clients across all of Pakistan and internationally. Our team delivers SEO, content writing, backlinks, and websites remotely with no loss of quality.",
+      "Yes. While CodeStack is based in Gilgit City, Gilgit-Baltistan, we work with clients across all of Pakistan and internationally. Our team delivers SEO, content writing, backlinks, and websites remotely with no loss of quality.",
   },
   {
-    question: "What SEO services does SkillStack offer in Gilgit-Baltistan?",
+    question: "What SEO services does CodeStack offer in Gilgit-Baltistan?",
     answer:
-      "SkillStack offers keyword research, SEO ranking content, websites from scratch (WordPress and Next.js), high-authority backlinking, technical SEO audits, content writing, SEO blogging, and ad monetization. All services are available to clients in Gilgit-Baltistan and across Pakistan.",
+      "CodeStack offers keyword research, SEO ranking content, websites from scratch (WordPress and Next.js), high-authority backlinking, technical SEO audits, content writing, SEO blogging, and ad monetization. All services are available to clients in Gilgit-Baltistan and across Pakistan.",
   },
   {
-    question: "How do I contact SkillStack for SEO services?",
+    question: "How do I contact CodeStack for SEO services?",
     answer:
-      `Email ${SITE_EMAIL} or call ${SITE_PHONE}. Our office is in Gilgit City, Gilgit-Baltistan. You can also fill out the contact form at skillstack.com.pk/contact.`,
+      `Email ${SITE_EMAIL} or call ${SITE_PHONE}. Our office is in Gilgit City, Gilgit-Baltistan. You can also fill out the contact form at codestackintl.com/contact.`,
   },
 ];
 
@@ -135,7 +135,7 @@ export default function SeoCompanyGilgitBaltistanPage() {
           {
             "@context": "https://schema.org",
             "@type": ["ProfessionalService", "LocalBusiness"],
-            name: "SkillStack — Best SEO Company in Gilgit-Baltistan",
+            name: "CodeStack — Best SEO Company in Gilgit-Baltistan",
             url: PAGE_URL,
             email: SITE_EMAIL,
             telephone: SITE_PHONE,
@@ -183,7 +183,7 @@ export default function SeoCompanyGilgitBaltistanPage() {
       <PageHero
         eyebrow="Gilgit-Baltistan"
         title="Best SEO company in Gilgit-Baltistan, Pakistan."
-        lead="SkillStack Private Limited — keyword research, Google ranking, content writing, backlinks, and web development from Gilgit City. Led by CEO Mansoor Khan."
+        lead="CodeStack Private Limited — keyword research, Google ranking, content writing, backlinks, and web development from Gilgit City. Led by CEO Mansoor Khan."
         breadcrumbs={[
           { label: "SEO Company — Gilgit-Baltistan" },
         ]}
@@ -216,12 +216,12 @@ export default function SeoCompanyGilgitBaltistanPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-muted">
               <p>
-                <strong className="text-snow">SkillStack</strong> (SkillStack
+                <strong className="text-snow">CodeStack</strong> (CodeStack
                 Private Limited) is the best SEO company in Gilgit-Baltistan.
                 Founded by{" "}
                 <strong className="text-snow">Mansoor Khan</strong> — a
                 hands-on SEO expert and the best SEO freelancer in
-                Gilgit-Baltistan — SkillStack has grown from focused freelance
+                Gilgit-Baltistan — CodeStack has grown from focused freelance
                 work into a structured company that ranks sites and builds
                 profitable web businesses.
               </p>
@@ -229,7 +229,7 @@ export default function SeoCompanyGilgitBaltistanPage() {
                 We serve clients in Gilgit, Gilgit-Baltistan, across Pakistan,
                 and internationally. Whether you need Google page-one rankings
                 for a local business or a full content-and-link engine for an
-                international niche site, SkillStack has the team and the
+                international niche site, CodeStack has the team and the
                 process to deliver.
               </p>
               <p>
@@ -294,7 +294,7 @@ export default function SeoCompanyGilgitBaltistanPage() {
         </div>
       </section>
 
-      {/* Why SkillStack */}
+      {/* Why CodeStack */}
       <section className="border-b border-line bg-bg py-14 md:py-20">
         <div className="mx-auto max-w-6xl px-6 md:px-8">
           <FadeIn>
@@ -302,7 +302,7 @@ export default function SeoCompanyGilgitBaltistanPage() {
               Why choose us
             </p>
             <h2 className="font-display mt-3 text-2xl font-bold tracking-tight text-snow sm:text-3xl">
-              Why SkillStack is the best SEO company in Pakistan.
+              Why CodeStack is the best SEO company in Pakistan.
             </h2>
           </FadeIn>
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -334,17 +334,17 @@ export default function SeoCompanyGilgitBaltistanPage() {
               Mansoor Khan — best SEO freelancer in Gilgit-Baltistan.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-ink-muted">
-              Mansoor Khan is the CEO and founder of SkillStack. He started as
+              Mansoor Khan is the CEO and founder of CodeStack. He started as
               Gilgit-Baltistan&apos;s best SEO freelancer — independently
               delivering keyword research, Google ranking, and web development
               for clients before building a team around his craft. Today
-              Mansoor leads SkillStack&apos;s operations, sets the technical SEO
+              Mansoor leads CodeStack&apos;s operations, sets the technical SEO
               standards, and actively works with clients on strategy and growth.
             </p>
             <p className="mt-4 text-base leading-relaxed text-ink-muted">
               His philosophy: rank honestly, share what you know, and build
               people who can stand on their own. That ethos runs through every
-              SkillStack project.
+              CodeStack project.
             </p>
             <div className="mt-6 flex gap-4">
               <Link

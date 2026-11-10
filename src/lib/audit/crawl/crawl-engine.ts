@@ -2,7 +2,7 @@ import { extractFromHtml } from "@/lib/audit/crawl/html-extract";
 import type { CrawledPage } from "@/lib/audit/crawl/types";
 
 const USER_AGENT =
-  "Mozilla/5.0 (compatible; SkillStack-Audit/1.0; +https://skillstack.com.pk)";
+  "Mozilla/5.0 (compatible; CodeStack-Audit/1.0; +https://codestackintl.com)";
 
 function normalizeStartUrl(input: string) {
   const trimmed = input.trim();

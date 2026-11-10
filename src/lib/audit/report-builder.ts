@@ -209,7 +209,7 @@ export function buildSiteAuditReport(input: BuildReportInput): SiteAuditReport {
     domain: input.domain,
     url: input.url,
     preparedAt: new Date().toISOString(),
-    brandName: input.brandName ?? "SkillStack",
+    brandName: input.brandName ?? "CodeStack",
     overallSecurityGrade: input.securityHeaders.grade,
     executiveSummary: buildExecutiveSummary(
       input.domain,

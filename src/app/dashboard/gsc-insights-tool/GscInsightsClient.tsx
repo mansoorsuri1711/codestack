@@ -241,7 +241,7 @@ export default function GscInsightsClient() {
           <ResultsPanel title="Choose Search Console property">
             <p className="text-sm text-ink-muted">
               Multiple properties match <strong className="text-snow">{project?.domain}</strong>.
-              Pick the one you want SkillStack to use.
+              Pick the one you want CodeStack to use.
             </p>
             <div className="mt-4 space-y-2">
               {pendingSites.map((site) => (
@@ -280,7 +280,7 @@ export default function GscInsightsClient() {
                 <>
                   Sign in with the Google account that has access to Search Console for{" "}
                   <strong className="text-snow">{project?.domain}</strong>. Each
-                  SkillStack user connects their own Google account — your data stays
+                  CodeStack user connects their own Google account — your data stays
                   private to your project.
                 </>
               ) : (
@@ -291,13 +291,13 @@ export default function GscInsightsClient() {
               )}
             </p>
             <ul className="mt-3 space-y-1 text-xs text-ink-muted">
-              <li>1. Create a SkillStack project with your domain (if you have not yet)</li>
+              <li>1. Create a CodeStack project with your domain (if you have not yet)</li>
               <li>2. Verify your site in Google Search Console</li>
               <li>3. Click connect and approve read-only access</li>
             </ul>
             {!oauthConfigured ? (
               <DashboardAlert variant="error">
-                Google OAuth is not configured on this SkillStack deployment.
+                Google OAuth is not configured on this CodeStack deployment.
               </DashboardAlert>
             ) : null}
             <div className="mt-6 flex flex-wrap gap-3">

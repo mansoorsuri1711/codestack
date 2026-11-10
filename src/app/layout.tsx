@@ -29,16 +29,16 @@ const publicSans = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "SkillStack — Web Development & SEO for Pakistan & Beyond",
-    template: "%s · SkillStack",
+    default: "CodeStack — Web Development & SEO for Pakistan & Beyond",
+    template: "%s · CodeStack",
   },
   description:
-    "SkillStack (Skill Stack) — keyword research, Google ranking, SEO blogging, content writing, backlinks, and websites from Gilgit-Baltistan for Pakistan and worldwide. Led by Mansoor Khan.",
+    "CodeStack (Code Stack) — keyword research, Google ranking, SEO blogging, content writing, backlinks, and websites from Gilgit-Baltistan for Pakistan and worldwide. Led by Mansoor Khan.",
   keywords: [
-    "SkillStack",
-    "Skill Stack",
-    "Skillstack",
-    "SkillStack.com.pk",
+    "CodeStack",
+    "Code Stack",
+    "Codestack",
+    "codestackintl.com",
     "best SEO company Gilgit-Baltistan",
     "best SEO company Pakistan",
     "best SEO freelancer Pakistan",
@@ -67,13 +67,13 @@ export const metadata: Metadata = {
     "digital marketing Gilgit-Baltistan",
   ],
   authors: [{ name: "Mansoor Khan", url: `${SITE_URL}/about` }],
-  creator: "SkillStack",
-  publisher: "SkillStack Private Limited",
-  applicationName: "SkillStack",
+  creator: "CodeStack",
+  publisher: "CodeStack Private Limited",
+  applicationName: "CodeStack",
   category: "Business",
   appleWebApp: {
     capable: true,
-    title: "SkillStack",
+    title: "CodeStack",
     statusBarStyle: "black-translucent",
   },
   formatDetection: {
@@ -83,10 +83,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_PK",
     url: SITE_URL,
-    siteName: "SkillStack",
-    title: "SkillStack — Grow Your Web Ranking | Pakistan & Beyond",
+    siteName: "CodeStack",
+    title: "CodeStack — Grow Your Web Ranking | Pakistan & Beyond",
     description:
-      "Official SkillStack site — keyword research, Google ranking, content writing, blogging, and backlink services from Gilgit-Baltistan.",
+      "Official CodeStack site — keyword research, Google ranking, content writing, blogging, and backlink services from Gilgit-Baltistan.",
     images: [
       {
         url: "/og-image.jpg",
@@ -94,13 +94,13 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: "image/jpeg",
-        alt: "SkillStack — Grow Your Web Ranking | Pakistan & Beyond",
+        alt: "CodeStack — Grow Your Web Ranking | Pakistan & Beyond",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SkillStack — Grow Your Web Ranking | Pakistan & Beyond",
+    title: "CodeStack — Grow Your Web Ranking | Pakistan & Beyond",
     description:
       "Keyword research, ranking, content, backlinks, and websites. Based in Gilgit-Baltistan, serving Pakistan and the world.",
     images: ["/twitter-card.jpg"],
@@ -109,12 +109,12 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
       {
-        url: "/brand/skill-stack-icon-192.webp",
+        url: "/brand/code-stack-icon-192.webp",
         type: "image/webp",
         sizes: "192x192",
       },
       {
-        url: "/brand/skill-stack-icon-512.webp",
+        url: "/brand/code-stack-icon-512.webp",
         type: "image/webp",
         sizes: "512x512",
       },

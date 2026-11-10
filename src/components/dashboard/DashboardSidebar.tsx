@@ -49,7 +49,7 @@ import { NewProjectModal } from "@/components/dashboard/NewProjectModal";
 import { RenameProjectModal } from "@/components/dashboard/RenameProjectModal";
 import { DeleteProjectModal } from "@/components/dashboard/DeleteProjectModal";
 
-const SIDEBAR_COLLAPSED_KEY = "skillstack-sidebar-collapsed";
+const SIDEBAR_COLLAPSED_KEY = "codestack-sidebar-collapsed";
 
 type MobileMenuContextValue = {
   open: boolean;

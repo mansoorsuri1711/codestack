@@ -5,7 +5,7 @@ import PageShell from "@/components/PageShell";
 
 export const metadata: Metadata = {
   title: "Checkout canceled",
-  description: "Your SkillStack checkout was canceled.",
+  description: "Your CodeStack checkout was canceled.",
   robots: { index: false, follow: false },
 };
 

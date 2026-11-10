@@ -53,7 +53,7 @@ function SectionIntro() {
         Why choose us
       </p>
       <h2 className="font-display mt-2 max-w-xl text-xl font-bold tracking-tight text-snow sm:mt-3 sm:text-3xl">
-        Why clients stay with SkillStack.
+        Why clients stay with CodeStack.
       </h2>
     </>
   );

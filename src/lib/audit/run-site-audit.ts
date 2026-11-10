@@ -18,7 +18,7 @@ function normalizeAuditUrl(domain: string): string {
 
 export async function runFullSiteAudit(
   domainInput: string,
-  brandName = "SkillStack",
+  brandName = "CodeStack",
 ): Promise<SiteAuditReport> {
   const domain = normalizeDomain(domainInput);
   const url = normalizeAuditUrl(domainInput);

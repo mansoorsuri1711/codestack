@@ -13,14 +13,14 @@ import {
 export const metadata: Metadata = {
   title: "Return & refund policy",
   description:
-    "SkillStack return and refund rules for digital SEO, website, and marketing packages purchased on skillstack.com.pk.",
+    "CodeStack return and refund rules for digital SEO, website, and marketing packages purchased on codestackintl.com.",
   alternates: { canonical: absoluteUrl("/refund") },
 };
 
 const sections = [
   {
     title: "Scope",
-    body: "This Return & Refund Policy applies to one-time packages and project fees paid through skillstack.com.pk (including Stripe checkouts) and to custom work confirmed by written proposal or email. SkillStack sells digital professional services — not physical goods — so “returns” mean cancellation or refund of service fees as described below.",
+    body: "This Return & Refund Policy applies to one-time packages and project fees paid through codestackintl.com (including Stripe checkouts) and to custom work confirmed by written proposal or email. CodeStack sells digital professional services — not physical goods — so “returns” mean cancellation or refund of service fees as described below.",
   },
   {
     title: "No physical returns",
@@ -28,7 +28,7 @@ const sections = [
   },
   {
     title: "Cooling-off before work starts",
-    body: "If you cancel in writing (email) before we begin substantive work on your package or project — and before any agreed kickoff call deliverables have started — we will refund 100% of the fees paid for that unused package, minus any non-refundable payment-processor fees charged to SkillStack (if applicable).",
+    body: "If you cancel in writing (email) before we begin substantive work on your package or project — and before any agreed kickoff call deliverables have started — we will refund 100% of the fees paid for that unused package, minus any non-refundable payment-processor fees charged to CodeStack (if applicable).",
   },
   {
     title: "After work has started",
@@ -62,15 +62,15 @@ export default function RefundPage() {
       <JsonLd
         data={webPageJsonLd({
           path: "/refund",
-          title: "Return & refund policy · SkillStack",
+          title: "Return & refund policy · CodeStack",
           description:
-            "Return and refund rules for SkillStack digital service packages.",
+            "Return and refund rules for CodeStack digital service packages.",
         })}
       />
       <PageHero
         eyebrow="Legal"
         title="Return & refund policy"
-        lead="Last updated: 1 August 2026. How cancellations and refunds work for SkillStack digital services."
+        lead="Last updated: 1 August 2026. How cancellations and refunds work for CodeStack digital services."
         breadcrumbs={[{ label: "Refund policy" }]}
       />
       <div className="mx-auto max-w-3xl space-y-10 px-6 py-12 md:px-8 md:py-16">

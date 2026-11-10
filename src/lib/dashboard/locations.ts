@@ -8,7 +8,7 @@ export const ALL_LOCATIONS_CODE = 0;
 export const DEFAULT_LOCATION_CODE = 2586; // Pakistan
 
 /** Country used when Labs/SERP APIs require a real location_code */
-export const DEFAULT_COUNTRY_LOCATION_CODE = 2586; // Pakistan (SkillStack primary market)
+export const DEFAULT_COUNTRY_LOCATION_CODE = 2586; // Pakistan (CodeStack primary market)
 
 /**
  * Markets used for "All locations" aggregation.

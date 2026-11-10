@@ -11,25 +11,25 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Register | Create a SkillStack Account",
+  title: "Register | Create a CodeStack Account",
   description:
-    "Create a SkillStack account to access SEO, keyword research, content, and web services. Official SkillStack registration for clients in Pakistan and worldwide.",
+    "Create a CodeStack account to access SEO, keyword research, content, and web services. Official CodeStack registration for clients in Pakistan and worldwide.",
   keywords: [
-    "SkillStack register",
-    "Skill Stack sign up",
-    "create SkillStack account",
-    "register skillstack.com.pk",
+    "CodeStack register",
+    "Code Stack sign up",
+    "create CodeStack account",
+    "register codestackintl.com",
   ],
   robots: { index: true, follow: true },
   alternates: { canonical: absoluteUrl("/register") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/register"),
-    title: "Register · SkillStack",
-    description: "Create your SkillStack account.",
+    title: "Register · CodeStack",
+    description: "Create your CodeStack account.",
   }),
   twitter: pageTwitter({
-    title: "Register · SkillStack",
-    description: "Create your SkillStack account.",
+    title: "Register · CodeStack",
+    description: "Create your CodeStack account.",
   }),
 };
 
@@ -56,7 +56,7 @@ export default async function RegisterPage({
 
   return (
     <AuthShell
-      title="Sign up to SkillStack"
+      title="Sign up to CodeStack"
       footer={
         <>
           Already have an account?{" "}

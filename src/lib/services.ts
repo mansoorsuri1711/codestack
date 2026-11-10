@@ -39,7 +39,7 @@ export const services: Service[] = [
     relatedFeatureLabel: "Keyword Research Tool",
     guide: {
       intro:
-        "This is SkillStack’s done-for-you keyword research service — our team delivers the list. (Want to run research yourself in the dashboard? Use the Keyword Research Tool under Features.) Keyword research in 2026 has two layers. The first is traditional: find terms people type into Google that you can realistically rank for. The second is new: find the questions AI assistants like ChatGPT, Perplexity, and Google Gemini answer every day — because the sources those tools cite get traffic even without a top-10 Google rank. SkillStack maps both layers so your content wins on every search surface.",
+        "This is CodeStack’s done-for-you keyword research service — our team delivers the list. (Want to run research yourself in the dashboard? Use the Keyword Research Tool under Features.) Keyword research in 2026 has two layers. The first is traditional: find terms people type into Google that you can realistically rank for. The second is new: find the questions AI assistants like ChatGPT, Perplexity, and Google Gemini answer every day — because the sources those tools cite get traffic even without a top-10 Google rank. CodeStack maps both layers so your content wins on every search surface.",
       sections: [
         {
           title: "The tools we use — and why each matters",
@@ -102,7 +102,7 @@ export const services: Service[] = [
     ],
     guide: {
       intro:
-        "SEO ranking in 2026 means winning two channels simultaneously: the traditional Google SERP and the AI answer layer — Google AI Overviews, ChatGPT, Perplexity, and Gemini. SkillStack writes fully optimized, on-intent articles using semantic SEO, AEO structure, and the competitor analysis required to outrank whatever is sitting above you — and get cited by the AI tools your audience is switching to.",
+        "SEO ranking in 2026 means winning two channels simultaneously: the traditional Google SERP and the AI answer layer — Google AI Overviews, ChatGPT, Perplexity, and Gemini. CodeStack writes fully optimized, on-intent articles using semantic SEO, AEO structure, and the competitor analysis required to outrank whatever is sitting above you — and get cited by the AI tools your audience is switching to.",
       sections: [
         {
           title: "Competitor analysis before the first draft",
@@ -164,7 +164,7 @@ export const services: Service[] = [
     ],
     guide: {
       intro:
-        "After keywords and SEO articles are ready, we build the site that carries them. SkillStack has expert WordPress developers and React / Next.js developers who design for mobile, craft UI/UX that feels premium, and implement the technical search foundations your content needs to perform — including full 2026 SEO and AEO infrastructure.",
+        "After keywords and SEO articles are ready, we build the site that carries them. CodeStack has expert WordPress developers and React / Next.js developers who design for mobile, craft UI/UX that feels premium, and implement the technical search foundations your content needs to perform — including full 2026 SEO and AEO infrastructure.",
       sections: [
         {
           title: "WordPress experts — design, mobile, and UX",
@@ -228,7 +228,7 @@ export const services: Service[] = [
     relatedFeatureLabel: "Backlink Checker",
     guide: {
       intro:
-        "This is SkillStack’s done-for-you backlinking service — we build and place links. (Need to inspect a domain’s existing link profile yourself? Use the Backlink Checker under Features.) In 2026, backlinks serve two masters: Google's PageRank algorithm and the AI trust signals that determine which sources ChatGPT, Perplexity, and Google AI Overviews cite. SkillStack builds high-authority links and brand citations that satisfy both — timed correctly and screened for quality.",
+        "This is CodeStack’s done-for-you backlinking service — we build and place links. (Need to inspect a domain’s existing link profile yourself? Use the Backlink Checker under Features.) In 2026, backlinks serve two masters: Google's PageRank algorithm and the AI trust signals that determine which sources ChatGPT, Perplexity, and Google AI Overviews cite. CodeStack builds high-authority links and brand citations that satisfy both — timed correctly and screened for quality.",
       sections: [
         {
           title: "Why we wait on Search Console first",
@@ -324,7 +324,7 @@ export const services: Service[] = [
         },
       ],
       closing:
-        "Monetization closes the SkillStack loop: research, ranking content, site, authority, and revenue — with specialists collaborating at every stage.",
+        "Monetization closes the CodeStack loop: research, ranking content, site, authority, and revenue — with specialists collaborating at every stage.",
     },
   },
   {
@@ -364,12 +364,12 @@ export const services: Service[] = [
           ],
         },
         {
-          title: "How it plugs into the rest of SkillStack",
+          title: "How it plugs into the rest of CodeStack",
           body: "Use the package alone, or roll it into SEO ranking, website build, backlinking, and monetization with the same team — so nothing gets lost in translation.",
         },
       ],
       closing:
-        "A keyword package is the lowest-friction way to start: clear targets, scored opportunities, and a path into the full SkillStack workflow when you are ready.",
+        "A keyword package is the lowest-friction way to start: clear targets, scored opportunities, and a path into the full CodeStack workflow when you are ready.",
     },
   },
   {
@@ -387,7 +387,7 @@ export const services: Service[] = [
     ],
     guide: {
       intro:
-        "Content writing in 2026 means writing for two audiences simultaneously: the human reader and the AI system that may cite your page in its next answer. SkillStack writers work from briefs tied to real search demand — and every article is structured to rank on Google and be eligible for citation by ChatGPT, Perplexity, and Google AI Overviews.",
+        "Content writing in 2026 means writing for two audiences simultaneously: the human reader and the AI system that may cite your page in its next answer. CodeStack writers work from briefs tied to real search demand — and every article is structured to rank on Google and be eligible for citation by ChatGPT, Perplexity, and Google AI Overviews.",
       sections: [
         {
           title: "AEO-structured writing — built for AI citation",
@@ -420,7 +420,7 @@ export const services: Service[] = [
           ],
         },
         {
-          title: "How it fits SkillStack",
+          title: "How it fits CodeStack",
           body: "Pair content with keyword research, technical SEO, websites, and backlinks so publishing is part of a ranking and citation system — not a content graveyard.",
         },
       ],
@@ -445,7 +445,7 @@ export const services: Service[] = [
     relatedFeatureLabel: "Site Audit Tool",
     guide: {
       intro:
-        "This is SkillStack’s done-for-you technical SEO service — we audit and help fix. (Want a self-serve scan in the dashboard first? Use the Site Audit Tool under Features.) Technical SEO in 2026 has expanded beyond crawl paths and sitemaps. Your site must be readable by Google's crawlers, understandable by AI knowledge graphs, and fast enough to pass Core Web Vitals. SkillStack audits all three layers — then helps implement fixes on WordPress or Next.js.",
+        "This is CodeStack’s done-for-you technical SEO service — we audit and help fix. (Want a self-serve scan in the dashboard first? Use the Site Audit Tool under Features.) Technical SEO in 2026 has expanded beyond crawl paths and sitemaps. Your site must be readable by Google's crawlers, understandable by AI knowledge graphs, and fast enough to pass Core Web Vitals. CodeStack audits all three layers — then helps implement fixes on WordPress or Next.js.",
       sections: [
         {
           title: "Audit coverage — Google and AI readiness",
@@ -489,7 +489,7 @@ export const services: Service[] = [
 ];
 
 export const teamCollaborationNote =
-  "The SkillStack team collaborates side by side in a fair, focused environment. Each member gives their best from their side — research, SEO writing, development, backlinking, and monetization — aiming to deliver the strongest version of the work, together.";
+  "The CodeStack team collaborates side by side in a fair, focused environment. Each member gives their best from their side — research, SEO writing, development, backlinking, and monetization — aiming to deliver the strongest version of the work, together.";
 
 export function getServiceBySlug(slug: string) {
   return services.find((s) => s.slug === slug);

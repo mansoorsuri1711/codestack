@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { services } from "@/lib/services";
 
-export const SITE_URL = "https://skillstack.com.pk";
-export const SITE_NAME = "SkillStack";
-export const LEGAL_NAME = "SkillStack Private Limited";
-export const SITE_EMAIL = "hello@skillstack.com.pk";
+export const SITE_URL = "https://codestackintl.com";
+export const SITE_NAME = "CodeStack";
+export const LEGAL_NAME = "CodeStack Private Limited";
+export const SITE_EMAIL = "hello@codestackintl.com";
 /** Opens Gmail compose addressed to SITE_EMAIL */
 export const SITE_EMAIL_HREF = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(SITE_EMAIL)}`;
 /** Public business phone (contact / support requirement). */
@@ -12,9 +12,9 @@ export const SITE_PHONE =
   process.env.NEXT_PUBLIC_SITE_PHONE?.trim() || "+923150979359";
 export const SITE_PHONE_HREF = `tel:${SITE_PHONE.replace(/[^\d+]/g, "")}`;
 export const FOUNDER_NAME = "Mansoor Khan";
-export const LINKEDIN_URL = "https://www.linkedin.com/company/skillstack-co/";
-export const X_URL = "https://x.com/skillstack_co";
-export const INSTAGRAM_URL = "https://www.instagram.com/skillstack.com.pk/";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/codestack-co/";
+export const X_URL = "https://x.com/codestack_co";
+export const INSTAGRAM_URL = "https://www.instagram.com/codestackintl.com/";
 
 /** Shared social / Google preview images (JPEG for LinkedIn/Facebook compatibility). */
 export const OG_IMAGE = {
@@ -23,7 +23,7 @@ export const OG_IMAGE = {
   width: 1200,
   height: 630,
   type: "image/jpeg",
-  alt: "SkillStack — Web Development & SEO for Pakistan & Beyond",
+  alt: "CodeStack — Web Development & SEO for Pakistan & Beyond",
 } as const;
 
 export const OG_IMAGE_SQUARE = {
@@ -32,7 +32,7 @@ export const OG_IMAGE_SQUARE = {
   width: 1200,
   height: 1200,
   type: "image/jpeg",
-  alt: "SkillStack",
+  alt: "CodeStack",
 } as const;
 
 export const TWITTER_CARD_IMAGE = {
@@ -40,7 +40,7 @@ export const TWITTER_CARD_IMAGE = {
   width: 1200,
   height: 628,
   type: "image/jpeg",
-  alt: "SkillStack — Keyword research, ranking, content, backlinks",
+  alt: "CodeStack — Keyword research, ranking, content, backlinks",
 } as const;
 
 /** @deprecated Prefer OG_IMAGE — kept for older imports. */
@@ -113,24 +113,24 @@ export type Crumb = {
 
 export const siteFaqs = [
   {
-    question: "What is SkillStack?",
+    question: "What is CodeStack?",
     answer:
-      "SkillStack Private Limited is a registered web development and SEO company based in Gilgit City, Gilgit-Baltistan, Pakistan, founded and led by CEO Mansoor Khan. We offer keyword research, Google ranking, SEO content and blogging, backlinks, websites, and ad monetization for clients across Pakistan and internationally.",
+      "CodeStack Private Limited is a registered web development and SEO company based in Gilgit City, Gilgit-Baltistan, Pakistan, founded and led by CEO Mansoor Khan. We offer keyword research, Google ranking, SEO content and blogging, backlinks, websites, and ad monetization for clients across Pakistan and internationally.",
   },
   {
-    question: "Is SkillStack a tech company in Gilgit-Baltistan?",
+    question: "Is CodeStack a tech company in Gilgit-Baltistan?",
     answer:
-      "Yes. SkillStack is a Gilgit-Baltistan-based tech company focused on SEO, Google ranking, keyword research, content writing, blogging, backlink services, and web development. We serve local businesses, clients across Pakistan, and international projects.",
+      "Yes. CodeStack is a Gilgit-Baltistan-based tech company focused on SEO, Google ranking, keyword research, content writing, blogging, backlink services, and web development. We serve local businesses, clients across Pakistan, and international projects.",
   },
   {
-    question: "What services does SkillStack offer?",
+    question: "What services does CodeStack offer?",
     answer:
-      "SkillStack offers keyword research, SEO ranking and content writing, websites from scratch (WordPress or Next.js), high-authority backlinking, AdSense monetization, and keyword packages.",
+      "CodeStack offers keyword research, SEO ranking and content writing, websites from scratch (WordPress or Next.js), high-authority backlinking, AdSense monetization, and keyword packages.",
   },
   {
-    question: "Who runs SkillStack?",
+    question: "Who runs CodeStack?",
     answer:
-      "Mansoor Khan is the CEO of SkillStack Private Limited. The company grew from focused freelance craft into a structured practice that ranks sites honestly and transfers knowledge so teams become independent.",
+      "Mansoor Khan is the CEO of CodeStack Private Limited. The company grew from focused freelance craft into a structured practice that ranks sites honestly and transfers knowledge so teams become independent.",
   },
   {
     question: "Do you provide SEO and backlink services across Pakistan?",
@@ -138,14 +138,14 @@ export const siteFaqs = [
       "Yes. While our office is in Gilgit-Baltistan, we deliver keyword research, Google ranking, blogging, content writing, and backlink services for clients nationwide in Pakistan and for international projects.",
   },
   {
-    question: "How does a SkillStack project work?",
+    question: "How does a CodeStack project work?",
     answer:
       "Engagements typically follow four stages: find the keyword, build the site, rank on Google with content and technical SEO, then earn from traffic with policy-aware ad placements. Clients approve targets before major build or content spend.",
   },
   {
-    question: "Where is the SkillStack office?",
+    question: "Where is the CodeStack office?",
     answer:
-      "SkillStack's office is in Gilgit-Baltistan, Pakistan. You can open the location on Google Maps or contact hello@skillstack.com.pk for project inquiries.",
+      "CodeStack's office is in Gilgit-Baltistan, Pakistan. You can open the location on Google Maps or contact hello@codestackintl.com for project inquiries.",
   },
 ] as const;
 
@@ -188,14 +188,14 @@ export function faqJsonLd(
 
 /** Core entity graph for branded search, AEO, and AI citation clarity. */
 export function siteGraphJsonLd() {
-  const logo = absoluteUrl("/brand/skill-stack.webp");
+  const logo = absoluteUrl("/brand/code-stack.webp");
   const ogImage = absoluteUrl("/og-image.jpg");
   const ogSquare = absoluteUrl("/og-image-square.jpg");
   const twitterCard = absoluteUrl("/twitter-card.jpg");
 
   const offerCatalog = {
     "@type": "OfferCatalog",
-    name: "SkillStack services",
+    name: "CodeStack services",
     itemListElement: services.map((service, i) => ({
       "@type": "Offer",
       position: i + 1,
@@ -224,12 +224,12 @@ export function siteGraphJsonLd() {
         name: LEGAL_NAME,
         alternateName: [
           SITE_NAME,
-          "Skill Stack",
-          "Skillstack",
-          "SkillStack.com.pk",
-          "skillstack",
-          "SkillStack Pakistan",
-          "SkillStack Gilgit-Baltistan",
+          "Code Stack",
+          "Codestack",
+          "codestackintl.com",
+          "codestack",
+          "CodeStack Pakistan",
+          "CodeStack Gilgit-Baltistan",
         ],
         url: SITE_URL,
         email: SITE_EMAIL,
@@ -241,9 +241,9 @@ export function siteGraphJsonLd() {
         },
         image: [logo, ogImage, ogSquare, twitterCard],
         description:
-          "SkillStack (SkillStack Private Limited) is a web development and SEO company based in Gilgit City, Gilgit-Baltistan, Pakistan — founded and led by CEO Mansoor Khan. The company provides keyword research, Google ranking, content writing, SEO blogging, backlink building, and websites for clients across Pakistan and internationally.",
+          "CodeStack (CodeStack Private Limited) is a web development and SEO company based in Gilgit City, Gilgit-Baltistan, Pakistan — founded and led by CEO Mansoor Khan. The company provides keyword research, Google ranking, content writing, SEO blogging, backlink building, and websites for clients across Pakistan and internationally.",
         disambiguatingDescription:
-          "SkillStack is a registered Pakistani tech company (SkillStack Private Limited), not to be confused with the general concept of skill stacking. It is a web development and SEO agency based in Gilgit-Baltistan, Pakistan, operating at skillstack.com.pk.",
+          "CodeStack is a registered Pakistani tech company (CodeStack Private Limited), not to be confused with the general concept of code stacking. It is a web development and SEO agency based in Gilgit-Baltistan, Pakistan, operating at codestackintl.com.",
         slogan: "From keyword to Google's first page — websites built to rank and earn.",
         sameAs: [LINKEDIN_URL, X_URL, INSTAGRAM_URL],
         founder: { "@id": `${SITE_URL}/#mansoor-khan` },
@@ -288,8 +288,8 @@ export function siteGraphJsonLd() {
           },
         ],
         knowsAbout: [
-          "SkillStack",
-          "Skill Stack",
+          "CodeStack",
+          "Code Stack",
           "Best SEO company in Gilgit-Baltistan",
           "Best SEO company in Pakistan",
           "Best SEO freelancer in Pakistan",
@@ -318,7 +318,7 @@ export function siteGraphJsonLd() {
         "@type": ["ProfessionalService", "LocalBusiness"],
         "@id": `${SITE_URL}/#business`,
         name: SITE_NAME,
-        alternateName: ["Skill Stack", "SkillStack Private Limited"],
+        alternateName: ["Code Stack", "CodeStack Private Limited"],
         legalName: LEGAL_NAME,
         url: SITE_URL,
         image: [logo, ogImage, ogSquare],
@@ -373,13 +373,13 @@ export function siteGraphJsonLd() {
         url: SITE_URL,
         name: SITE_NAME,
         alternateName: [
-          "Skill Stack",
-          "SkillStack Private Limited",
-          "SkillStack.com.pk",
-          "SkillStack Pakistan",
+          "Code Stack",
+          "CodeStack Private Limited",
+          "codestackintl.com",
+          "CodeStack Pakistan",
         ],
         description:
-          "Official website of SkillStack Private Limited — an SEO and web development company based in Gilgit-Baltistan, Pakistan. Not to be confused with the general concept of skill stacking.",
+          "Official website of CodeStack Private Limited — an SEO and web development company based in Gilgit-Baltistan, Pakistan. Not to be confused with the general concept of code stacking.",
         publisher: { "@id": `${SITE_URL}/#organization` },
         about: { "@id": `${SITE_URL}/#organization` },
         subjectOf: { "@id": `${SITE_URL}/#organization` },
@@ -459,9 +459,9 @@ export function howToJsonLd(
   return {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: "How SkillStack takes a project from research to revenue",
+    name: "How CodeStack takes a project from research to revenue",
     description:
-      "Four stages SkillStack uses to research keywords, build sites, rank on Google, and monetize traffic.",
+      "Four stages CodeStack uses to research keywords, build sites, rank on Google, and monetize traffic.",
     totalTime: "P60D",
     estimatedCost: {
       "@type": "MonetaryAmount",
@@ -486,7 +486,7 @@ export const siteReviews = [
     ratingValue: 5,
     datePublished: "2025-11-15",
     reviewBody:
-      "SkillStack ranked my business website on Google's first page within three months. Mansoor and his team understood exactly what keywords we needed and delivered consistent results. Highly recommended for anyone serious about SEO in Pakistan.",
+      "CodeStack ranked my business website on Google's first page within three months. Mansoor and his team understood exactly what keywords we needed and delivered consistent results. Highly recommended for anyone serious about SEO in Pakistan.",
   },
   {
     author: "Fatima Noor",
@@ -502,7 +502,7 @@ export const siteReviews = [
     ratingValue: 5,
     datePublished: "2026-01-20",
     reviewBody:
-      "SkillStack's keyword research saved us months of guesswork. They mapped out a clear content strategy and we started ranking for competitive terms faster than expected. Great value for the investment.",
+      "CodeStack's keyword research saved us months of guesswork. They mapped out a clear content strategy and we started ranking for competitive terms faster than expected. Great value for the investment.",
   },
 ] as const;
 

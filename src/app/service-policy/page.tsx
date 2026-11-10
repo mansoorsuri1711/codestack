@@ -14,14 +14,14 @@ import {
 export const metadata: Metadata = {
   title: "Service delivery & shipping policy",
   description:
-    "How SkillStack delivers digital SEO, website, and marketing services — no physical shipping; timelines, handoff, and support.",
+    "How CodeStack delivers digital SEO, website, and marketing services — no physical shipping; timelines, handoff, and support.",
   alternates: { canonical: absoluteUrl("/service-policy") },
 };
 
 const sections = [
   {
     title: "Digital services only — no physical shipping",
-    body: "SkillStack Private Limited provides professional digital services (keyword research, SEO, content, websites, backlinks, monetization, and related packages). We do not sell or ship physical products. There are no courier, freight, or package-delivery charges. “Shipping policy” for our business means how and when service deliverables are provided electronically.",
+    body: "CodeStack Private Limited provides professional digital services (keyword research, SEO, content, websites, backlinks, monetization, and related packages). We do not sell or ship physical products. There are no courier, freight, or package-delivery charges. “Shipping policy” for our business means how and when service deliverables are provided electronically.",
   },
   {
     title: "How deliverables are provided",
@@ -59,15 +59,15 @@ export default function ServicePolicyPage() {
       <JsonLd
         data={webPageJsonLd({
           path: "/service-policy",
-          title: "Service delivery & shipping policy · SkillStack",
+          title: "Service delivery & shipping policy · CodeStack",
           description:
-            "How SkillStack delivers digital services — electronic handoff, timelines, and support.",
+            "How CodeStack delivers digital services — electronic handoff, timelines, and support.",
         })}
       />
       <PageHero
         eyebrow="Legal"
         title="Service delivery & shipping policy"
-        lead="Last updated: 1 August 2026. Digital delivery only — how SkillStack provides SEO and web services."
+        lead="Last updated: 1 August 2026. Digital delivery only — how CodeStack provides SEO and web services."
         breadcrumbs={[{ label: "Service policy" }]}
       />
       <div className="mx-auto max-w-3xl space-y-10 px-6 py-12 md:px-8 md:py-16">

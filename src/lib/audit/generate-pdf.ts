@@ -2,7 +2,7 @@ import PDFDocument from "pdfkit";
 import type { SiteAuditReport } from "@/lib/audit/types";
 import { sectionFixes } from "@/lib/audit/report-builder";
 
-const BRAND = "SkillStack";
+const BRAND = "CodeStack";
 const ACCENT = "#14b8a6";
 
 function formatDate(iso: string) {

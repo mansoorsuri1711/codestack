@@ -84,19 +84,19 @@ export default function ConnectPage() {
   const curlExample = apiKey
     ? `curl -X POST "${apiBaseUrl}/keywords/research" \\
   -H "Content-Type: application/json" \\
-  -H "x-skillstack-key: ${apiKey}" \\
+  -H "x-codestack-key: ${apiKey}" \\
   -d '{"seed":"seo tools pakistan","limit":25}'`
     : "";
 
   const mcpConfig = apiKey
     ? `{
   "mcpServers": {
-    "skillstack-seo": {
+    "codestack-seo": {
       "command": "npx",
       "args": ["-y", "curl", "-s"],
       "env": {
-        "SKILLSTACK_API_URL": "${apiBaseUrl}",
-        "SKILLSTACK_API_KEY": "${apiKey}"
+        "CODESTACK_API_URL": "${apiBaseUrl}",
+        "CODESTACK_API_KEY": "${apiKey}"
       }
     }
   }
@@ -195,7 +195,7 @@ export default function ConnectPage() {
                 <li><code className="text-accent">GET /gsc?tab=queries</code> — Search Console data</li>
               </ul>
               <p className="mt-3 text-xs text-ink-muted">
-                Send header: <code className="rounded bg-black/30 px-1">x-skillstack-key: your-key</code>
+                Send header: <code className="rounded bg-black/30 px-1">x-codestack-key: your-key</code>
               </p>
             </ResultsPanel>
 

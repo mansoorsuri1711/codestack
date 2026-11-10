@@ -36,7 +36,7 @@ export default function ContactForm() {
           Log in to send a brief
         </h3>
         <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-          Contact submissions are limited to authenticated SkillStack accounts so
+          Contact submissions are limited to authenticated CodeStack accounts so
           we can reply to a verified email.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">

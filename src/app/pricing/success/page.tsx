@@ -9,8 +9,8 @@ import { User } from "@/models/User";
 import { getStripe } from "@/lib/stripe";
 
 export const metadata: Metadata = {
-  title: "Payment successful | SkillStack",
-  description: "Your SkillStack Pro payment was received.",
+  title: "Payment successful | CodeStack",
+  description: "Your CodeStack Pro payment was received.",
   robots: { index: false, follow: false },
 };
 
@@ -53,7 +53,7 @@ export default async function PricingSuccessPage({
         title="Payment received · Welcome to Pro"
         lead={
           <>
-            Thanks for choosing SkillStack Pro. Your transaction has been confirmed and
+            Thanks for choosing CodeStack Pro. Your transaction has been confirmed and
             your all-in-one SEO workspace is ready.
           </>
         }

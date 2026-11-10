@@ -57,7 +57,7 @@ export function PromptResearchUnlock({
   return (
     <PaidFeatureUnlockCard
       title="Unlock Prompt Research"
-      description="Find questions people ask about your market, see how ChatGPT answers them, and check which sites the answers cite. It runs on costlier AI data — included with SkillStack Pro."
+      description="Find questions people ask about your market, see how ChatGPT answers them, and check which sites the answers cite. It runs on costlier AI data — included with CodeStack Pro."
       features={RESEARCH_FEATURES}
       footer={footer}
     />

@@ -9,18 +9,18 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Reset Password | SkillStack",
-  description: "Choose a new password for your SkillStack account.",
+  title: "Reset Password | CodeStack",
+  description: "Choose a new password for your CodeStack account.",
   robots: { index: false, follow: false },
   alternates: { canonical: absoluteUrl("/reset-password") },
   openGraph: pageOpenGraph({
     url: absoluteUrl("/reset-password"),
-    title: "Reset password · SkillStack",
-    description: "Choose a new password for your SkillStack account.",
+    title: "Reset password · CodeStack",
+    description: "Choose a new password for your CodeStack account.",
   }),
   twitter: pageTwitter({
-    title: "Reset password · SkillStack",
-    description: "Choose a new password for your SkillStack account.",
+    title: "Reset password · CodeStack",
+    description: "Choose a new password for your CodeStack account.",
   }),
 };
 

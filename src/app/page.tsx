@@ -15,10 +15,10 @@ import {
 
 export const metadata: Metadata = {
   title: {
-    absolute: "SkillStack — Web Development & SEO for Pakistan & Beyond",
+    absolute: "CodeStack — Web Development & SEO for Pakistan & Beyond",
   },
   description:
-    "SkillStack (Skill Stack) — keyword research, Google ranking, SEO blogging, content writing, backlinks, and websites. Based in Gilgit-Baltistan, serving Pakistan and worldwide.",
+    "CodeStack (Code Stack) — keyword research, Google ranking, SEO blogging, content writing, backlinks, and websites. Based in Gilgit-Baltistan, serving Pakistan and worldwide.",
   keywords: [
     "best SEO company Gilgit-Baltistan",
     "best SEO company Pakistan",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "SEO company Gilgit-Baltistan",
     "SEO services Pakistan",
     "web development company Pakistan",
-    "SkillStack",
-    "Skill Stack",
-    "SkillStack.com.pk",
+    "CodeStack",
+    "Code Stack",
+    "codestackintl.com",
     "keyword research Pakistan",
     "backlink services",
     "content writing Pakistan",
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
   alternates: { canonical: SITE_URL },
   openGraph: pageOpenGraph({
     url: SITE_URL,
-    title: "SkillStack — Web Development & SEO for Pakistan & Beyond",
+    title: "CodeStack — Web Development & SEO for Pakistan & Beyond",
     description:
-      "Official SkillStack site — SEO, ranking, content, backlinks, and websites from Gilgit-Baltistan for Pakistan and worldwide.",
+      "Official CodeStack site — SEO, ranking, content, backlinks, and websites from Gilgit-Baltistan for Pakistan and worldwide.",
   }),
   twitter: pageTwitter({
-    title: "SkillStack — Web Development & SEO for Pakistan & Beyond",
-    description: "Official SkillStack site — SEO, ranking, content, backlinks, and websites from Gilgit-Baltistan for Pakistan and worldwide.",
+    title: "CodeStack — Web Development & SEO for Pakistan & Beyond",
+    description: "Official CodeStack site — SEO, ranking, content, backlinks, and websites from Gilgit-Baltistan for Pakistan and worldwide.",
   }),
 };
 
@@ -57,9 +57,9 @@ export default function Home() {
           {
             ...webPageJsonLd({
               path: "/",
-              title: "SkillStack — Web Development & SEO for Pakistan & Beyond",
+              title: "CodeStack — Web Development & SEO for Pakistan & Beyond",
               description:
-                "Official website of SkillStack — keyword research, Google ranking, SEO blogging, content writing, backlinks, and websites across Pakistan and worldwide.",
+                "Official website of CodeStack — keyword research, Google ranking, SEO blogging, content writing, backlinks, and websites across Pakistan and worldwide.",
             }),
             speakable: {
               "@type": "SpeakableSpecification",
@@ -77,11 +77,11 @@ export default function Home() {
           data-speakable
           className="sr-only"
         >
-          SkillStack (also written Skill Stack) is{" "}
-          <strong>SkillStack Private Limited</strong>{" "}
+          CodeStack (also written Code Stack) is{" "}
+          <strong>CodeStack Private Limited</strong>{" "}
           — a web development, SEO, and freelance services company based in
           Gilgit City, Gilgit-Baltistan, Pakistan, founded by Mansoor Khan.
-          SkillStack is the best freelance company in Gilgit,
+          CodeStack is the best freelance company in Gilgit,
           Gilgit-Baltistan, and Pakistan, offering keyword research, Google
           ranking, content writing, backlinks, and websites for clients across
           Pakistan and worldwide.

@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "SkillStack — Keyword research, ranking, content, backlinks";
+export const alt = "CodeStack — Keyword research, ranking, content, backlinks";
 export const size = { width: 1200, height: 628 };
 export const contentType = "image/jpeg";
 

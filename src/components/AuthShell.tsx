@@ -21,10 +21,10 @@ export default function AuthShell({ title, children, footer }: AuthShellProps) {
         <Link
           href="/"
           className="transition hover:opacity-90"
-          aria-label="SkillStack home"
+          aria-label="CodeStack home"
         >
           <Image
-            src="/brand/skill-stack.webp"
+            src="/brand/code-stack.webp"
             alt=""
             width={48}
             height={48}
@@ -47,7 +47,7 @@ export default function AuthShell({ title, children, footer }: AuthShellProps) {
 
         <p className="mt-5 text-center text-xs text-ink-muted sm:mt-6">
           <Link href="/" className="hover:text-accent hover:underline">
-            ← Back to SkillStack
+            ← Back to CodeStack
           </Link>
         </p>
       </div>

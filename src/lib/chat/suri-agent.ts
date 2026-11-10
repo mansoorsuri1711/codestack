@@ -141,7 +141,7 @@ function formatDomainOverviewReply(
     .join("\n");
 
   return {
-    answer: `### ${domain} — live DataForSEO snapshot\n\n- **Est. organic traffic**: ${traffic}/mo\n- **Organic keywords**: ${kwCount}\n- **Positions**: #1 → ${pos1} · #2–3 → ${pos2} · #4–10 → ${pos4}\n\n### Top pages\n${topPages || "No page metrics returned."}\n\n### Keyword opportunities\n${kwList || "No keyword rows returned."}\n\n### Next moves\n1. Push striking-distance keywords (#4–#20) with on-page + internal links.\n2. Strengthen the top pages above — they already earn traffic.\n3. Connect Search Console in SkillStack for click/impression truth alongside Labs estimates.`,
+    answer: `### ${domain} — live DataForSEO snapshot\n\n- **Est. organic traffic**: ${traffic}/mo\n- **Organic keywords**: ${kwCount}\n- **Positions**: #1 → ${pos1} · #2–3 → ${pos2} · #4–10 → ${pos4}\n\n### Top pages\n${topPages || "No page metrics returned."}\n\n### Keyword opportunities\n${kwList || "No keyword rows returned."}\n\n### Next moves\n1. Push striking-distance keywords (#4–#20) with on-page + internal links.\n2. Strengthen the top pages above — they already earn traffic.\n3. Connect Search Console in CodeStack for click/impression truth alongside Labs estimates.`,
     sources: [
       { title: `Domain Organic Report — ${domain}`, url: `https://${domain}` },
     ],

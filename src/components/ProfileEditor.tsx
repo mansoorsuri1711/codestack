@@ -522,7 +522,7 @@ export default function ProfileEditor() {
           <input
             value={form.company}
             onChange={(e) => setForm({ ...form, company: e.target.value })}
-            placeholder="SkillStack"
+            placeholder="CodeStack"
             className={inputClass}
           />
         </label>
