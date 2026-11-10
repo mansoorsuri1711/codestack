@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     url: absoluteUrl("/contact"),
     title: "Contact CodeStack",
     description:
-      "Tell us your niche and goals — hello@codestackintl.com · Gilgit-Baltistan, Pakistan.",
+      "Tell us your niche and goals — skillstack.site@gmail.com · Gilgit-Baltistan, Pakistan.",
   }),
   twitter: pageTwitter({
     title: "Contact CodeStack",
-    description: "Tell us your niche and goals — hello@codestackintl.com · Gilgit-Baltistan, Pakistan.",
+    description: "Tell us your niche and goals — skillstack.site@gmail.com · Gilgit-Baltistan, Pakistan.",
   }),
 };
 

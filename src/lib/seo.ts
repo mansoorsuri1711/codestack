@@ -4,7 +4,7 @@ import { services } from "@/lib/services";
 export const SITE_URL = "https://codestackintl.com";
 export const SITE_NAME = "CodeStack";
 export const LEGAL_NAME = "CodeStack Private Limited";
-export const SITE_EMAIL = "hello@codestackintl.com";
+export const SITE_EMAIL = "skillstack.site@gmail.com";
 /** Opens Gmail compose addressed to SITE_EMAIL */
 export const SITE_EMAIL_HREF = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(SITE_EMAIL)}`;
 /** Public business phone (contact / support requirement). */
@@ -145,7 +145,7 @@ export const siteFaqs = [
   {
     question: "Where is the CodeStack office?",
     answer:
-      "CodeStack's office is in Gilgit-Baltistan, Pakistan. You can open the location on Google Maps or contact hello@codestackintl.com for project inquiries.",
+      "CodeStack's office is in Gilgit-Baltistan, Pakistan. You can open the location on Google Maps or contact skillstack.site@gmail.com for project inquiries.",
   },
 ] as const;
 
